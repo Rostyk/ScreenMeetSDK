@@ -1,0 +1,2123 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 18B664D4DBF22B3F6B271154516833C2 /* Build configuration list for PBXAggregateTarget "GoogleWebRTC" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleWebRTC;
+			productName = GoogleWebRTC;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01AF8E59C2AD1D06F26E24D512A84F0A /* SMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CD7F5E8821700C89E578294BC5E54 /* SMError.swift */; };
+		02A821C15C6465FF2D30BF97D35331B9 /* SMRequestsChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA88C9560D430FAF13C40620649E075 /* SMRequestsChannel.swift */; };
+		02DAF0FB64E1A2740910EC15B09E2A9D /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE6C9277A4BE876CAEC7F3BE813A5C9 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0841D89F864C337872653D6097D36018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD0912AF641EA23045DADE4AA57A32 /* Foundation.framework */; };
+		08737EDE148196BE39A2BFEFE1F60F6E /* SMDiscoverySessionByPinResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BE85DC0ACE506740DE750BBD3E4752 /* SMDiscoverySessionByPinResponse.swift */; };
+		0DC4768C3765D8512D0C2084BEAD67DB /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2DE615D204CDAB3D91E099F69DA918 /* SocketEnginePacketType.swift */; };
+		0F1B50A3E598A1B0E2E9E80AB3578265 /* SMFrameProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A27D79CCDFFBA2FA8E70F6606A26DB /* SMFrameProcessor.swift */; };
+		10BCF98CBDF43EDBE7DA4A2313C9A682 /* SMRemoteControlMouseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB53A561D8C87FFCD96D800B31ECFED /* SMRemoteControlMouseEvent.swift */; };
+		110623A48BC820EF2C4995A40BCE0B2E /* SMDisconnectTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AE85124D2C6846D88B6A74E270757A /* SMDisconnectTransaction.swift */; };
+		12A23513BF6AD4D8089178092566EE78 /* SMDiscoverySessionByPinRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D298CA8D6054D5B7152077ED22957E8 /* SMDiscoverySessionByPinRequest.swift */; };
+		158E7EBCAF3AD148476122A20AAD37AA /* ScreenMeetSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4916BE99131CD5BFA9E399A374D214 /* ScreenMeetSDK-dummy.m */; };
+		165DE3B3D31558403A32B671EF7DF369 /* SMChannelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C4789904429FE7BF90D75740EFB2FB /* SMChannelsManager.swift */; };
+		17CC07E03C2F2D3F849E8B0033B181A8 /* SMConnectTransportPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23611296CA015D993861442EEBE71A0A /* SMConnectTransportPayload.swift */; };
+		1A7712FF743DA9FC45C3AC63F9E211FF /* Socket.IO-Client-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20BBE6C7B26A716133B13D866241F1A8 /* Socket.IO-Client-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B2704B8B7B927FD9BFAB1C035EDF838 /* SMAppStreamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36405F3B557E5E6448976D57B47A221D /* SMAppStreamService.swift */; };
+		1DEB9D5F95EC2C78D986059E5157E646 /* SMCallerStateChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C124EA2296CC5064341386E264377DB /* SMCallerStateChannel.swift */; };
+		1E0A097DF330A8F1642B99C775C4A6BC /* SDPRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428539084DEB6BEE29C5F04478B6B942 /* SDPRule.swift */; };
+		1EA07C084AB31369EB8F128049C33DE0 /* SMRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AA3D26468D9CFEB5602032B749E4EE /* SMRequestService.swift */; };
+		1FE47F733ED5AF875238EF62E2FDEFBC /* SDPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060E18A830C600AE3BC32DFBBA4EE817 /* SDPUtils.swift */; };
+		201329C378C19C23305933FCE298A9B7 /* SMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EBFD9C9F44618B1392F33AD1FE268A /* SMLogger.swift */; };
+		2109F85103D410CAF6B0F89AA6DA2819 /* UIView+TopmostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB47CC49D39FCAF70AB2BD94020A0D2 /* UIView+TopmostView.swift */; };
+		2130D0686FDA05E1FD230DA5077528AF /* SMTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8543A30B859658447CDEF73DB5626D02 /* SMTransport.swift */; };
+		21DFAA85B2A8AAEF75D855CCA5060524 /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EBFF4346E05C3DF0006F3036F585B /* SocketEngineWebsocket.swift */; };
+		21ED30EC27C223908369576AB26F9A61 /* SMSendTrackSocketReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5548BFFF98D1DAD0BE5481956FAAFAA /* SMSendTrackSocketReponse.swift */; };
+		22010F56143B8F16462BE9BFDA102190 /* SMMediasoupChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13644DFAAFF5DE8903DF9F3AF07096C /* SMMediasoupChannel.swift */; };
+		24994AD2FC08F0E72381A5781F693929 /* SMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCB1ED01AEA187B9FED44EBD705A023 /* SMRequest.swift */; };
+		2723D1FF62C0D0FC5509AC0B867248BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD0912AF641EA23045DADE4AA57A32 /* Foundation.framework */; };
+		28338FF928DE0317C3447273A04A259F /* VideoCapturerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84BB93EDB3D7461D8442368C264A302 /* VideoCapturerFactory.swift */; };
+		2999455B9E2DC739D19FC9EEAC060703 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58F37999236FBF9FC1935612ADABDCB /* SocketAnyEvent.swift */; };
+		2A306534B8D81FEC4F1DD5AEB246D231 /* SMHandshakeTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A974710D10D0A963C4AE64AB75AF7A /* SMHandshakeTransaction.swift */; };
+		2A3B69F008E6FF53EEF63FB7721AEAF9 /* SMSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C2F444DF3135BB553B6774CC44BBD4 /* SMSession.swift */; };
+		2C8971FA29BEA3C95BB79565E5407E7B /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D6E8E408602C885603CFF833406E24 /* SocketManager.swift */; };
+		2E73E31DA63E1C618F3C2149B74B2F4B /* Pods-ScreenMeetTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE69FD14CBA43C19E113445474D257 /* Pods-ScreenMeetTests-dummy.m */; };
+		317CC8305E25207233F791921BD90417 /* MSProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64D8FA0C2F9E7D0592925E01BF833D /* MSProducer.swift */; };
+		31EF1AF95B6BCFA8345CA00994262EBC /* SMCallerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C00181C1B6761BDF30B63F23D9594AF /* SMCallerState.swift */; };
+		3221659A9E488C7B3764537AB639733A /* SMEncodingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8DC61E02CEC6D368AB2F41CA5B887 /* SMEncodingsBuilder.swift */; };
+		33012C9318B6E8ADADA1A66863989EC9 /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FFEAF47A4D0B7BD93479B62886FCCB /* SocketStringReader.swift */; };
+		33FEA72BE865B666F02888A4704DD62B /* SMLaserPointerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD7DDB059F2E016350A18FD019E26D /* SMLaserPointerService.swift */; };
+		340934BCD8EE3EF023CA3DE4016AA141 /* SMLogRoomCodeUsageTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6624ACF79DAAAE0569E5E4E58478758E /* SMLogRoomCodeUsageTransaction.swift */; };
+		37887B0CD856E047CB7582DB7DD243CA /* SMRemoteControlKeyboardEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB48C1AFDD14A56A2C36B6429F88AA /* SMRemoteControlKeyboardEvent.swift */; };
+		38C8D50B41531235318DFF8521A8EE5D /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38045D5331AC2BF9A90E78D03DE2A266 /* SocketIOClientConfiguration.swift */; };
+		3A3242B6DA22A2D2798021773A51A478 /* Pods-ScreenMeetTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D443928C40551815E394933CE99A6A /* Pods-ScreenMeetTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A59F655AE00090C61BE4B5BDB19D955 /* SocketRawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41870D2303B52AEF9DEC894404BB08DF /* SocketRawView.swift */; };
+		3A8ED8398D9AF12E8706D90602D7D9C8 /* SMRemoteControlChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200AB5F601AD9FECA511FC295B8EB54 /* SMRemoteControlChannel.swift */; };
+		3AED71D476DDC4BCE306A05C8462189F /* SMNewTrackAvailableMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41F4C5306E8C6AE63A2BA3ED9F0589 /* SMNewTrackAvailableMessage.swift */; };
+		3D92FC3327B3FEDFA727FAE630C7DE77 /* SMConnectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A479CF82B830945ABEAD962FD96E54 /* SMConnectResponse.swift */; };
+		400663F84DEC0191A2B97F93ED010287 /* MSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CBB3C283EADA211670400A0E63F90 /* MSHandler.swift */; };
+		423D24DD116D179687E1C30E0A49EDB8 /* H264.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B3D4A9343879ED1710BBF19B5BA62A /* H264.swift */; };
+		44FC71EE2179F1BC2658ECA8FD755FF2 /* SDPTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39888C36B8937918C4631B011E6470 /* SDPTransform.swift */; };
+		453FE6B80FA22CC5498C2CC28615B861 /* Socket.IO-Client-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7237F4B5EA0757B07B9BB300F0A16E /* Socket.IO-Client-Swift-dummy.m */; };
+		47E7ACE671C17A681BE3516DDBB13F02 /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF70D91B41BBA154ECFE9AB44911993 /* SocketParsable.swift */; };
+		485965463E06272A63A2DDD0477224D0 /* SMVideoStateTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F316045EABFD47C41CA6F37FB65FF2C /* SMVideoStateTransaction.swift */; };
+		4E46410CD856E81303CEFFF116412E57 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D727D23ADB3233219E83AAF8667299DA /* SocketAckManager.swift */; };
+		4F9A1F0FE45A2E14ED130FC16DC2778E /* MSVideoEncoderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9A1E1FEB96C1F4790F6D36260EF79 /* MSVideoEncoderFactory.swift */; };
+		5031A9A7E8948A38C49DB1E9C1B1DFE7 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323811E24D35FD5A90D83148A51F256 /* SocketIOClient.swift */; };
+		56B5924F3E180D2F6112D39B148B6C73 /* SMResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82746998A5C0243761E73E646DBE947B /* SMResponse.swift */; };
+		5A2807B6358F3B2FA8F6190A9BECA101 /* SMEntitlementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F520C63AED64EF5CCB6CFE3C1EF0E /* SMEntitlementModel.swift */; };
+		5AD1CCD311637FFC0136E38CAB884436 /* Pods-ScreenMeet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56329EF90AC5BFF48FC4BB264721AADC /* Pods-ScreenMeet-dummy.m */; };
+		5E7E95E8FF4F3CA6D3E000689543A053 /* SMRequestHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ACB0D13CF25D36A7AFACCE08173D79 /* SMRequestHTTPService.swift */; };
+		6060ADBF39477D7A71712C045C3F42F8 /* SMChatChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F3AD924332B9EE233DEED894990CC /* SMChatChannel.swift */; };
+		61AB1DE6489CB11B27285A16966C8B4C /* SMGetChallengeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1411172EF051040648ADB28CF67381D /* SMGetChallengeResponse.swift */; };
+		64A2F1A93D42C38F1403E1014961A435 /* SMRemoteControlEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2D12F79C88F85013A7B330BD5E6DD4 /* SMRemoteControlEvent.swift */; };
+		64FF3EC977C02564079DF31149AA54DD /* SMStartWebRTCTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA79DE2A77321CA4175923FDDEC1DF0 /* SMStartWebRTCTransaction.swift */; };
+		661188816A878E5BE7E373D89CAB5DB9 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEECA9463F638F86F7A12E3D36CDC9 /* Starscream-dummy.m */; };
+		6C8B5CC9A2182E1E236AD70AC018C61A /* MSTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335EA50D6D89C8B363E9733BFB2CBFB0 /* MSTransport.swift */; };
+		6CAB04CFA32E8B8E11910DE08A6A9476 /* SMConfidentialRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1CBFB1E70ECA04153E3898C8E7D991 /* SMConfidentialRect.swift */; };
+		6DBF1227FB9A732AD4C404C494D4584D /* SMAudioStateTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB328AD96EF3ED723AB6E7DA11BCD68 /* SMAudioStateTransaction.swift */; };
+		6E145713AE5E5033BECBEF160691C575 /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549CCBBDA29AEB546D72CB5D2FC060F5 /* SocketEnginePollable.swift */; };
+		6FA93D479494D46DECE826FBE5728891 /* MSConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4A0A90BDAB35FF7B8C7CA61620858 /* MSConsumer.swift */; };
+		730A7696A5F6048E3DC1C851352FB0F8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261BD21C975D8831C5182BB0FE5DA03 /* StringExtension.swift */; };
+		73F6DB2201F47B51B279CBB91D9B3E76 /* Deserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2F2DE72D10CCCBA6E5A8565542C97E /* Deserializable.swift */; };
+		742C73FB40CDD0DA973C96C38A7877E0 /* SMChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0D0285038D143B1579E03443C74A9 /* SMChannel.swift */; };
+		7502A44BED6433F453AD6F837BAEB79F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD0912AF641EA23045DADE4AA57A32 /* Foundation.framework */; };
+		796AD752DEE88EE6F5505DFEFF93CF29 /* SMEntitlementsChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1DE5BD1F3B0DF62DA25F275E0D418 /* SMEntitlementsChannel.swift */; };
+		84B2DD54A5DF544807C7FD9203F56584 /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96EAFC466B495279FA929810938A810 /* SocketIOClientSpec.swift */; };
+		87F82AA6EB89A0BD69A6706293FD858F /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD858847371C34A6D404DE22B575442A /* SocketLogger.swift */; };
+		8B0BCE81ED6CB4E5996C77EC4A20E916 /* MSMediaSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07F6033636BC196181F171D8BDCB08F /* MSMediaSection.swift */; };
+		8EB35D30534399D7ED14936B2B0BEE56 /* SMCapabilitiesChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB5F4DBB0365231898A85645D5A36B /* SMCapabilitiesChannel.swift */; };
+		8EBFA11A0CA94B63E569EB1DB9B0E546 /* SMLaserPointerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8ACCE516F860D65CBFA75C5C51AF1 /* SMLaserPointerModel.swift */; };
+		8FD8B8450A9BAC6BC91FF520447BBC95 /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DB2A55E6E957D840A19B3839874AB /* SocketExtensions.swift */; };
+		94603370C7EA9F2BA99B45A5942934E3 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C18B6D338D5EB9ABCADD36BC68B0B4 /* SSLSecurity.swift */; };
+		96FEABAD66F921160DF9DE48139995E9 /* SMStringifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048415984E96677A486A3CFA827582BC /* SMStringifier.swift */; };
+		9707AB0C572704D9F1753E6D8EBE769D /* SMLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF95DB2D403491CEC086F94A458D4FB3 /* SMLogEvent.swift */; };
+		9A9E9FEA7D6077792937DB7D616131E8 /* ScreenMeetSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BC71ECA9711F17D67BF2DCAF6EE617 /* ScreenMeetSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BEE3472227BDF0EFBE60C1AD3467BE4 /* SMDiscoveryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10397EE43F474539954FD59145B07F /* SMDiscoveryResponse.swift */; };
+		9C85B4B309B4285F408B4EAF7B977A3C /* SMGetChallengeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF05DB28AA5E829FC836180D55F2613 /* SMGetChallengeRequest.swift */; };
+		9D4307B576BDC0A6716503F5994376EF /* SDPGrammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C153D232AF98BEE2AC657949D970B21A /* SDPGrammar.swift */; };
+		9D4BAC4EF55184685FDCBE914CEE821B /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B47B235BF23C527A62643BCDC5D6EE /* Compression.swift */; };
+		9E063F3FCC93CE12088D668B10BF3014 /* SMTracksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31DA21D24EF791A65A18F8D0FF0373 /* SMTracksManager.swift */; };
+		A020612D1C0FBDF5DE0ED5FF21517924 /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E488CDBDB0855805761269C20374F4E /* SocketEngineSpec.swift */; };
+		A136A62A648642D572CF3E6897F8A4D0 /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0FD76EB8366313ED983E6BEBF07BE /* SocketEventHandler.swift */; };
+		A16FFD5FC61F3E37262C27B2F8B9303D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD0912AF641EA23045DADE4AA57A32 /* Foundation.framework */; };
+		A35E5E50722971A9DC5F91E0DF28F331 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50CE06559EB07243E339406AB721AAC /* Starscream.framework */; };
+		A722D579A499DB5D03426156A4232DB2 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B688E720A2AEFFCB4737BC6251F8815 /* SocketEngineClient.swift */; };
+		A7F09BA7F74F5E4CE8AC9E648365A1F3 /* SMLaserPointerChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1AB36EE6726D2D06406BAE60EFDC22 /* SMLaserPointerChannel.swift */; };
+		A9C192B574EA9B49D08699A2C0F43F1B /* MSRemoteSDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5146D4975317AE9A640C08D05AD3DAB6 /* MSRemoteSDP.swift */; };
+		AA08538D519AF6E50923D0A13F5367C0 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45670EFB51CC9CDC458201E7456AF81 /* SocketIO.framework */; };
+		ABC48D61C4116C150A444339A755D917 /* MSDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475C73229AFDAE7213E31513E159B602 /* MSDevice.swift */; };
+		B3C160212335110C2A78522B1BFB6ACA /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E868DC0165D6AF9EADAB806C7C33C /* SSLSecurity.swift */; };
+		B97FD5E825A14F744084B1440BD05BED /* SMResumeTrackPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5EB3CFFA198023AD9E9645F337B0E /* SMResumeTrackPayload.swift */; };
+		B9FF06F7460FBA90163EEE47218529A6 /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4088850FC8F28D4FD9DB392EA847B /* SocketAckEmitter.swift */; };
+		BCA813445E74FAD518BABA1B5C167584 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB0C8EDBECB7638E9E144E0197D2D7 /* SocketEngine.swift */; };
+		BCDCCEFC29A550BAE8C711BE4A0B57D5 /* SMEntitlementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BF85C4BECFCE07D0FF3E1BD47F51A /* SMEntitlementType.swift */; };
+		BDDBA13F25FD1A51DA319A9FC6D3F126 /* SocketManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42498CD75F39675697E86114432B150 /* SocketManagerSpec.swift */; };
+		C4A8812029DACF89E0530AE13C9BB983 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DD0912AF641EA23045DADE4AA57A32 /* Foundation.framework */; };
+		C580C699AF27FB89C5A48495CED10A2B /* SMResolveChallengeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004E808E582D6F340C5D1028834DEA1 /* SMResolveChallengeRequest.swift */; };
+		C7749BECB690731C8D8C5FF2EFB2AF95 /* SMConnectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5F4C0A88B0BF86A9102D365DD38B2C /* SMConnectRequest.swift */; };
+		CA53D48346E3528FBAD1B7A3897B6860 /* SMIceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37147210268E910E7C8092BBE1B9DE12 /* SMIceCandidate.swift */; };
+		CC58F3553E4D578EBC1B5855B77A0D70 /* SMTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51A6AFAE2BC0B8C0E276C46C7C084DD /* SMTransaction.swift */; };
+		CFEA2E2F326B6B068BBC67BABF25814A /* SMTransportOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D990AB1EC7C1BCF81F8E12A8B1C0D7 /* SMTransportOptions.swift */; };
+		D0E35BC4076899F5A3868E78F80EF7EB /* SocketIOStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FA035129560FE6CAA4C1C933599DAC /* SocketIOStatus.swift */; };
+		D42B6FC9A4C410C27CCE21F6B09368FA /* SMTextMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEEEB9BD8BF7561CBEB1867228AF440 /* SMTextMessage.swift */; };
+		D60BD80DAF65044E2591C75602E690E7 /* ScreenVideoCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C216963FBB6B1D164C08DB3D0719F82 /* ScreenVideoCapturer.swift */; };
+		D66EE8DEC22728025F1F396AFF16C41E /* Pods-ScreenMeet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E955BA57C2CFCA2FFDC8D82F098929A /* Pods-ScreenMeet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D69DA3FA46A159C88F58A5C23DB4C5EA /* SMRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48748B22333A4D5D38372B2F5516F547 /* SMRequestModel.swift */; };
+		D7C78723C7A8F8ADBFB4DE33535501E1 /* CameraVideoCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FA4132E5879E6DFD67BADFBB6CC6B /* CameraVideoCapturer.swift */; };
+		D85C63B4FD90C8052C99861266DF142B /* SMRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEFE1CE613874684B172B1F75B01CB3 /* SMRestClient.swift */; };
+		D8E3F63B903E0EEA0215A18E999531CD /* ScreenMeet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D22F6716339C1F75DC3DA1C2E9239 /* ScreenMeet.swift */; };
+		DB4C4F3DDAACE376F95E0C49AF3E738B /* MSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349FC198ED95BB21819E84FC06452AE /* MSError.swift */; };
+		DE45E7E2274BDD1AF8C0A197D510F503 /* SMSendTrackPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C096FAB7688A551DD46D3BFABF405 /* SMSendTrackPayload.swift */; };
+		DFDF139D90B9FBBC48E0FE7076A67D21 /* SMWebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A494867DD1C4EDF5D3C5474B07E30B0 /* SMWebSocketClient.swift */; };
+		E117F9F544FEF2ACB5CD15198D735067 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C916E0159AD977BC224AE0FD5724B7C /* WebSocket.swift */; };
+		E11A5D1213B465F379C2843C01ECD666 /* MSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C8DC00BD596C37102D0A2FC3EB27 /* MSLogger.swift */; };
+		E1A005D105DEF2F47137520EB71F0BAF /* SMConfidentialWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478AF25E0445F83624FBD79EEB2596F8 /* SMConfidentialWebView.swift */; };
+		E1D645C53B80E6D4FAE86781F62CECE8 /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD6962F5DC63AD0EC95F3CCD9017E4 /* SocketPacket.swift */; };
+		E1FA80F30EBBD19E26A60356E5B6B3A9 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8054B82B2D66CCF5A7178A80F01DEB4A /* SocketTypes.swift */; };
+		E516CB93649C6DD3712FAA74B8CC39DA /* SMDiscoveryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA4025D8ED32453BD9542A62BCCD2B /* SMDiscoveryRequest.swift */; };
+		E5226B524EEFA7CA4E943CD6F9A36AAF /* MSPeerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A85406D18FDF4E162060152F30F4B /* MSPeerConnection.swift */; };
+		EAC1F47B2C3C31E6F84E37BB13057A2B /* SMSocketDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189252009F8C4D19F6D4F95EC18D3C3 /* SMSocketDataParser.swift */; };
+		EB71459962583712C6007F2219B8330B /* SMParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD50FDDD7F8AD24812A9CA78196E94E /* SMParticipant.swift */; };
+		EBAC8D5CEB6680F0ABE68401AD843CFA /* SMInitializationPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3BCAADDBACE0806537D02BF488E23C /* SMInitializationPayload.swift */; };
+		EBBFE4CD01881E87625547DA1B7E0EA2 /* SMIdentityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE1997AC9F2936783E76C79A0C0D4B /* SMIdentityInfo.swift */; };
+		EEF49D3B3FB734A738DED517AC340D89 /* SMRtcChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221922F82CEDF112505517F29654F507 /* SMRtcChannel.swift */; };
+		EF044DB3C21F09FF0988252DA757E5D5 /* MSOrtc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A4A12C3D81A2026AB9BCF26D41E35E /* MSOrtc.swift */; };
+		F011840F6952ADAFC190C8BB160B5CA7 /* SMLogCapturerChangeTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CF17F6C020F198D22184F08A12F990 /* SMLogCapturerChangeTransaction.swift */; };
+		F0F3AE4BD96B55FFD60E923DD3A69296 /* SMConfidentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4D912C7627E9A5D9407B9471C31BC /* SMConfidentialView.swift */; };
+		F5B85407EAF118A4B439F4B9770EC146 /* SMTurnConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBED88503B2F7169296652FDF17690FF /* SMTurnConfiguration.swift */; };
+		F611609B2088E3DDF3D7DAC03CE576CA /* SMChannelMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E28BE01A232783F55E060AD585AD82E /* SMChannelMessage.swift */; };
+		FC1E33815E0A62AEB87ED7BDCE23AF24 /* SMParticipantsChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A59E05FCC4A3F0F757F501E22F50E3 /* SMParticipantsChannel.swift */; };
+		FC213DA09D2AA9360212C9A57D1929C8 /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64EB50A1D2F193EA101AEA6F417295E /* SocketIOClientOption.swift */; };
+		FD4C5EC584AAC8E6F8ECBD7881AF140D /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBDBB9DBC6B2DF45DA7F19FAAC8215C /* SSLClientCertificate.swift */; };
+		FE62117FFEA502D80583FBB548A25EDD /* SMHandshakeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F573E3DFFEF030584CD5366183E6582 /* SMHandshakeOptions.swift */; };
+		FF0455A0045FA187F50B9AAC3298A4B6 /* SMRemoteControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71704F782BFA4BC7CF4D64A7B1A30E81 /* SMRemoteControlService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		082AA70F04630FBF4B16C238D79FD3E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC23BFCFC44D9224C054485B54824B8E;
+			remoteInfo = GoogleWebRTC;
+		};
+		0E1D0F00E91A56CC9A91AE1AD8A96624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A44D85440C5D58BC5C4D70A539C5EEF0;
+			remoteInfo = "Socket.IO-Client-Swift";
+		};
+		554ADECB9B3F6F86A4A3481A828A233E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A44D85440C5D58BC5C4D70A539C5EEF0;
+			remoteInfo = "Socket.IO-Client-Swift";
+		};
+		68B1EBD5EE37E80CF7DF41731786A0A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		8136862A2EE7313F06F66480882C2A63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC23BFCFC44D9224C054485B54824B8E;
+			remoteInfo = GoogleWebRTC;
+		};
+		89AEC084FF77CECAEB6CA05597204AD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A44D85440C5D58BC5C4D70A539C5EEF0;
+			remoteInfo = "Socket.IO-Client-Swift";
+		};
+		96D4EF7A9750E81A4775DE5F56CC8053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		B51591112D93A87325FC5A84FDF8437D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC23BFCFC44D9224C054485B54824B8E;
+			remoteInfo = GoogleWebRTC;
+		};
+		C44F22A1D03ECD2EB9EC62634AC4216E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C33772663A449206C0FBFC99FF21C7B;
+			remoteInfo = ScreenMeetSDK;
+		};
+		D9ABBDA6397274F988972DB066469598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		DF93848E663C40AEC80510B19DCEBCBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C33772663A449206C0FBFC99FF21C7B;
+			remoteInfo = ScreenMeetSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0349FC198ED95BB21819E84FC06452AE /* MSError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSError.swift; sourceTree = "<group>"; };
+		048415984E96677A486A3CFA827582BC /* SMStringifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMStringifier.swift; sourceTree = "<group>"; };
+		04AB48C1AFDD14A56A2C36B6429F88AA /* SMRemoteControlKeyboardEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRemoteControlKeyboardEvent.swift; sourceTree = "<group>"; };
+		04D990AB1EC7C1BCF81F8E12A8B1C0D7 /* SMTransportOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMTransportOptions.swift; sourceTree = "<group>"; };
+		060E18A830C600AE3BC32DFBBA4EE817 /* SDPUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SDPUtils.swift; sourceTree = "<group>"; };
+		06D0C8DC00BD596C37102D0A2FC3EB27 /* MSLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSLogger.swift; sourceTree = "<group>"; };
+		06D443928C40551815E394933CE99A6A /* Pods-ScreenMeetTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreenMeetTests-umbrella.h"; sourceTree = "<group>"; };
+		08A4A12C3D81A2026AB9BCF26D41E35E /* MSOrtc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSOrtc.swift; sourceTree = "<group>"; };
+		08C4789904429FE7BF90D75740EFB2FB /* SMChannelsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMChannelsManager.swift; sourceTree = "<group>"; };
+		09B18D9A4D7971876043892FB062FF56 /* Pods_ScreenMeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenMeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D39888C36B8937918C4631B011E6470 /* SDPTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SDPTransform.swift; sourceTree = "<group>"; };
+		0E4916BE99131CD5BFA9E399A374D214 /* ScreenMeetSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScreenMeetSDK-dummy.m"; sourceTree = "<group>"; };
+		0FCEECA9463F638F86F7A12E3D36CDC9 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		14E60B685DE4E80B32E428F27767D17C /* Pods-ScreenMeetTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreenMeetTests-frameworks.sh"; sourceTree = "<group>"; };
+		15A59E05FCC4A3F0F757F501E22F50E3 /* SMParticipantsChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMParticipantsChannel.swift; sourceTree = "<group>"; };
+		16694BC93E991F26B0898D13E547F4DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		17E4D912C7627E9A5D9407B9471C31BC /* SMConfidentialView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMConfidentialView.swift; sourceTree = "<group>"; };
+		1BA27FC479491F8FFC38DEB9E69DC552 /* ScreenMeetSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScreenMeetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB328AD96EF3ED723AB6E7DA11BCD68 /* SMAudioStateTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMAudioStateTransaction.swift; sourceTree = "<group>"; };
+		1C2F2DE72D10CCCBA6E5A8565542C97E /* Deserializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Deserializable.swift; sourceTree = "<group>"; };
+		1DF8ACCE516F860D65CBFA75C5C51AF1 /* SMLaserPointerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMLaserPointerModel.swift; sourceTree = "<group>"; };
+		20BBE6C7B26A716133B13D866241F1A8 /* Socket.IO-Client-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-umbrella.h"; sourceTree = "<group>"; };
+		221922F82CEDF112505517F29654F507 /* SMRtcChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRtcChannel.swift; sourceTree = "<group>"; };
+		23611296CA015D993861442EEBE71A0A /* SMConnectTransportPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMConnectTransportPayload.swift; sourceTree = "<group>"; };
+		29ACB0D13CF25D36A7AFACCE08173D79 /* SMRequestHTTPService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRequestHTTPService.swift; sourceTree = "<group>"; };
+		2D0FA4132E5879E6DFD67BADFBB6CC6B /* CameraVideoCapturer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraVideoCapturer.swift; sourceTree = "<group>"; };
+		2D2D12F79C88F85013A7B330BD5E6DD4 /* SMRemoteControlEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRemoteControlEvent.swift; sourceTree = "<group>"; };
+		2F5BF85C4BECFCE07D0FF3E1BD47F51A /* SMEntitlementType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMEntitlementType.swift; sourceTree = "<group>"; };
+		2FCB1ED01AEA187B9FED44EBD705A023 /* SMRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRequest.swift; sourceTree = "<group>"; };
+		317DB2A55E6E957D840A19B3839874AB /* SocketExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketExtensions.swift; path = Source/SocketIO/Util/SocketExtensions.swift; sourceTree = "<group>"; };
+		31B4088850FC8F28D4FD9DB392EA847B /* SocketAckEmitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = Source/SocketIO/Ack/SocketAckEmitter.swift; sourceTree = "<group>"; };
+		335EA50D6D89C8B363E9733BFB2CBFB0 /* MSTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSTransport.swift; sourceTree = "<group>"; };
+		36405F3B557E5E6448976D57B47A221D /* SMAppStreamService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMAppStreamService.swift; sourceTree = "<group>"; };
+		37147210268E910E7C8092BBE1B9DE12 /* SMIceCandidate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMIceCandidate.swift; sourceTree = "<group>"; };
+		38045D5331AC2BF9A90E78D03DE2A266 /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientConfiguration.swift; path = Source/SocketIO/Client/SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
+		39DA1521AA3937F4BCF6AEFAF3E57878 /* Pods-ScreenMeet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenMeet-Info.plist"; sourceTree = "<group>"; };
+		3C00181C1B6761BDF30B63F23D9594AF /* SMCallerState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMCallerState.swift; sourceTree = "<group>"; };
+		3C216963FBB6B1D164C08DB3D0719F82 /* ScreenVideoCapturer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreenVideoCapturer.swift; sourceTree = "<group>"; };
+		3CB81007A995F191C293EE003ED7586F /* Pods-ScreenMeetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenMeetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DFD7DDB059F2E016350A18FD019E26D /* SMLaserPointerService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMLaserPointerService.swift; sourceTree = "<group>"; };
+		4004E808E582D6F340C5D1028834DEA1 /* SMResolveChallengeRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMResolveChallengeRequest.swift; sourceTree = "<group>"; };
+		4097CA6172B02D373C5EE0A52AB54F48 /* Pods-ScreenMeet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreenMeet-frameworks.sh"; sourceTree = "<group>"; };
+		41870D2303B52AEF9DEC894404BB08DF /* SocketRawView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketRawView.swift; path = Source/SocketIO/Client/SocketRawView.swift; sourceTree = "<group>"; };
+		4200AB5F601AD9FECA511FC295B8EB54 /* SMRemoteControlChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRemoteControlChannel.swift; sourceTree = "<group>"; };
+		428539084DEB6BEE29C5F04478B6B942 /* SDPRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SDPRule.swift; sourceTree = "<group>"; };
+		4323811E24D35FD5A90D83148A51F256 /* SocketIOClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClient.swift; path = Source/SocketIO/Client/SocketIOClient.swift; sourceTree = "<group>"; };
+		432EBFF4346E05C3DF0006F3036F585B /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineWebsocket.swift; path = Source/SocketIO/Engine/SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		45A27D79CCDFFBA2FA8E70F6606A26DB /* SMFrameProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMFrameProcessor.swift; sourceTree = "<group>"; };
+		45AE85124D2C6846D88B6A74E270757A /* SMDisconnectTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMDisconnectTransaction.swift; sourceTree = "<group>"; };
+		4717810A56FD73456B99982179A887EC /* Socket.IO-Client-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Socket.IO-Client-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		475C73229AFDAE7213E31513E159B602 /* MSDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSDevice.swift; sourceTree = "<group>"; };
+		478AF25E0445F83624FBD79EEB2596F8 /* SMConfidentialWebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMConfidentialWebView.swift; sourceTree = "<group>"; };
+		48748B22333A4D5D38372B2F5516F547 /* SMRequestModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRequestModel.swift; sourceTree = "<group>"; };
+		49A8DC61E02CEC6D368AB2F41CA5B887 /* SMEncodingsBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMEncodingsBuilder.swift; sourceTree = "<group>"; };
+		4D02205B1B82C97247F1791747E19A9C /* Pods_ScreenMeetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenMeetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EBDBB9DBC6B2DF45DA7F19FAAC8215C /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
+		5087CE096E2EC1C116B2BC7802CD3D9E /* Pods-ScreenMeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenMeet.release.xcconfig"; sourceTree = "<group>"; };
+		50C0B0879B7086918A819F704BF40B4B /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5146D4975317AE9A640C08D05AD3DAB6 /* MSRemoteSDP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRemoteSDP.swift; sourceTree = "<group>"; };
+		5261BD21C975D8831C5182BB0FE5DA03 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		52BC71ECA9711F17D67BF2DCAF6EE617 /* ScreenMeetSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScreenMeetSDK-umbrella.h"; sourceTree = "<group>"; };
+		549CCBBDA29AEB546D72CB5D2FC060F5 /* SocketEnginePollable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePollable.swift; path = Source/SocketIO/Engine/SocketEnginePollable.swift; sourceTree = "<group>"; };
+		54C2F444DF3135BB553B6774CC44BBD4 /* SMSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMSession.swift; sourceTree = "<group>"; };
+		54DD0912AF641EA23045DADE4AA57A32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		56329EF90AC5BFF48FC4BB264721AADC /* Pods-ScreenMeet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreenMeet-dummy.m"; sourceTree = "<group>"; };
+		59D778740F36B156F5F5A8439174DDF3 /* GoogleWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleWebRTC.debug.xcconfig; sourceTree = "<group>"; };
+		5AFE69FD14CBA43C19E113445474D257 /* Pods-ScreenMeetTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreenMeetTests-dummy.m"; sourceTree = "<group>"; };
+		5C124EA2296CC5064341386E264377DB /* SMCallerStateChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMCallerStateChannel.swift; sourceTree = "<group>"; };
+		5C916E0159AD977BC224AE0FD5724B7C /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		5D3F520C63AED64EF5CCB6CFE3C1EF0E /* SMEntitlementModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMEntitlementModel.swift; sourceTree = "<group>"; };
+		5D526636407B4A5DAD8A9AD55ED8BC2C /* ScreenMeetSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScreenMeetSDK.release.xcconfig; sourceTree = "<group>"; };
+		5F573E3DFFEF030584CD5366183E6582 /* SMHandshakeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMHandshakeOptions.swift; sourceTree = "<group>"; };
+		60B47B235BF23C527A62643BCDC5D6EE /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		60CF17F6C020F198D22184F08A12F990 /* SMLogCapturerChangeTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMLogCapturerChangeTransaction.swift; sourceTree = "<group>"; };
+		6189252009F8C4D19F6D4F95EC18D3C3 /* SMSocketDataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMSocketDataParser.swift; sourceTree = "<group>"; };
+		62B3D4A9343879ED1710BBF19B5BA62A /* H264.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = H264.swift; sourceTree = "<group>"; };
+		634CD7F5E8821700C89E578294BC5E54 /* SMError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMError.swift; sourceTree = "<group>"; };
+		64DD6962F5DC63AD0EC95F3CCD9017E4 /* SocketPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketPacket.swift; path = Source/SocketIO/Parse/SocketPacket.swift; sourceTree = "<group>"; };
+		65CE1997AC9F2936783E76C79A0C0D4B /* SMIdentityInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMIdentityInfo.swift; sourceTree = "<group>"; };
+		6624ACF79DAAAE0569E5E4E58478758E /* SMLogRoomCodeUsageTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMLogRoomCodeUsageTransaction.swift; sourceTree = "<group>"; };
+		66A0FD76EB8366313ED983E6BEBF07BE /* SocketEventHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEventHandler.swift; path = Source/SocketIO/Client/SocketEventHandler.swift; sourceTree = "<group>"; };
+		69D6E8E408602C885603CFF833406E24 /* SocketManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManager.swift; path = Source/SocketIO/Manager/SocketManager.swift; sourceTree = "<group>"; };
+		6B0C096FAB7688A551DD46D3BFABF405 /* SMSendTrackPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMSendTrackPayload.swift; sourceTree = "<group>"; };
+		6B2DE615D204CDAB3D91E099F69DA918 /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePacketType.swift; path = Source/SocketIO/Engine/SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		6CA88C9560D430FAF13C40620649E075 /* SMRequestsChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRequestsChannel.swift; sourceTree = "<group>"; };
+		6D298CA8D6054D5B7152077ED22957E8 /* SMDiscoverySessionByPinRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMDiscoverySessionByPinRequest.swift; sourceTree = "<group>"; };
+		6EF5EB3CFFA198023AD9E9645F337B0E /* SMResumeTrackPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMResumeTrackPayload.swift; sourceTree = "<group>"; };
+		6FB58783CB3353F07CBA59351E48E23D /* Pods-ScreenMeetTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenMeetTests-Info.plist"; sourceTree = "<group>"; };
+		71704F782BFA4BC7CF4D64A7B1A30E81 /* SMRemoteControlService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRemoteControlService.swift; sourceTree = "<group>"; };
+		7203E4C5F3FDFC3D478024051931A5BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		77BE85DC0ACE506740DE750BBD3E4752 /* SMDiscoverySessionByPinResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMDiscoverySessionByPinResponse.swift; sourceTree = "<group>"; };
+		78FFEAF47A4D0B7BD93479B62886FCCB /* SocketStringReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = Source/SocketIO/Util/SocketStringReader.swift; sourceTree = "<group>"; };
+		7CBB0C8EDBECB7638E9E144E0197D2D7 /* SocketEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngine.swift; path = Source/SocketIO/Engine/SocketEngine.swift; sourceTree = "<group>"; };
+		7EB53A561D8C87FFCD96D800B31ECFED /* SMRemoteControlMouseEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRemoteControlMouseEvent.swift; sourceTree = "<group>"; };
+		7F5F4C0A88B0BF86A9102D365DD38B2C /* SMConnectRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMConnectRequest.swift; sourceTree = "<group>"; };
+		8054B82B2D66CCF5A7178A80F01DEB4A /* SocketTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketTypes.swift; path = Source/SocketIO/Util/SocketTypes.swift; sourceTree = "<group>"; };
+		82746998A5C0243761E73E646DBE947B /* SMResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMResponse.swift; sourceTree = "<group>"; };
+		84B3AAA08F8515756F2151DFFD04E2A3 /* ScreenMeetSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScreenMeetSDK.debug.xcconfig; sourceTree = "<group>"; };
+		8543A30B859658447CDEF73DB5626D02 /* SMTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMTransport.swift; sourceTree = "<group>"; };
+		87AF4EC0028730A9F24543D18ADC979C /* Socket.IO-Client-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Socket.IO-Client-Swift.modulemap"; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B688E720A2AEFFCB4737BC6251F8815 /* SocketEngineClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineClient.swift; path = Source/SocketIO/Engine/SocketEngineClient.swift; sourceTree = "<group>"; };
+		8E28BE01A232783F55E060AD585AD82E /* SMChannelMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMChannelMessage.swift; sourceTree = "<group>"; };
+		8E955BA57C2CFCA2FFDC8D82F098929A /* Pods-ScreenMeet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreenMeet-umbrella.h"; sourceTree = "<group>"; };
+		8F1CBFB1E70ECA04153E3898C8E7D991 /* SMConfidentialRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMConfidentialRect.swift; sourceTree = "<group>"; };
+		8F316045EABFD47C41CA6F37FB65FF2C /* SMVideoStateTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMVideoStateTransaction.swift; sourceTree = "<group>"; };
+		9241EF4C928D2495B5C794E9684E84B8 /* Socket.IO-Client-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Socket.IO-Client-Swift-Info.plist"; sourceTree = "<group>"; };
+		947CBB3C283EADA211670400A0E63F90 /* MSHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSHandler.swift; sourceTree = "<group>"; };
+		96BA4025D8ED32453BD9542A62BCCD2B /* SMDiscoveryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMDiscoveryRequest.swift; sourceTree = "<group>"; };
+		96C18B6D338D5EB9ABCADD36BC68B0B4 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
+		997F7C47C913D02F3A51FDC4F1FC9476 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		9A494867DD1C4EDF5D3C5474B07E30B0 /* SMWebSocketClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMWebSocketClient.swift; sourceTree = "<group>"; };
+		9D31DA21D24EF791A65A18F8D0FF0373 /* SMTracksManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMTracksManager.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E488CDBDB0855805761269C20374F4E /* SocketEngineSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineSpec.swift; path = Source/SocketIO/Engine/SocketEngineSpec.swift; sourceTree = "<group>"; };
+		9F406964C429161586E13EB083BF222C /* ScreenMeetSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScreenMeetSDK.modulemap; sourceTree = "<group>"; };
+		A58F37999236FBF9FC1935612ADABDCB /* SocketAnyEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAnyEvent.swift; path = Source/SocketIO/Client/SocketAnyEvent.swift; sourceTree = "<group>"; };
+		A64EB50A1D2F193EA101AEA6F417295E /* SocketIOClientOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientOption.swift; path = Source/SocketIO/Client/SocketIOClientOption.swift; sourceTree = "<group>"; };
+		A732594F448B221E473CEBB98B43AA1E /* Pods-ScreenMeet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScreenMeet.modulemap"; sourceTree = "<group>"; };
+		A7A479CF82B830945ABEAD962FD96E54 /* SMConnectResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMConnectResponse.swift; sourceTree = "<group>"; };
+		A9E9A1E1FEB96C1F4790F6D36260EF79 /* MSVideoEncoderFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSVideoEncoderFactory.swift; sourceTree = "<group>"; };
+		AAE9D93A5694FC1C195E2C39154D821B /* ScreenMeetSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScreenMeetSDK-prefix.pch"; sourceTree = "<group>"; };
+		AB1AB36EE6726D2D06406BAE60EFDC22 /* SMLaserPointerChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMLaserPointerChannel.swift; sourceTree = "<group>"; };
+		AB7E868DC0165D6AF9EADAB806C7C33C /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/SocketIO/Util/SSLSecurity.swift; sourceTree = "<group>"; };
+		ABE6C9277A4BE876CAEC7F3BE813A5C9 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		AD858847371C34A6D404DE22B575442A /* SocketLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketLogger.swift; path = Source/SocketIO/Util/SocketLogger.swift; sourceTree = "<group>"; };
+		ADA79DE2A77321CA4175923FDDEC1DF0 /* SMStartWebRTCTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMStartWebRTCTransaction.swift; sourceTree = "<group>"; };
+		AE98BFA34562125D8FCD65520A5EA056 /* ScreenMeetSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScreenMeetSDK-Info.plist"; sourceTree = "<group>"; };
+		AEEFE1CE613874684B172B1F75B01CB3 /* SMRestClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRestClient.swift; sourceTree = "<group>"; };
+		AF3BCAADDBACE0806537D02BF488E23C /* SMInitializationPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMInitializationPayload.swift; sourceTree = "<group>"; };
+		B1411172EF051040648ADB28CF67381D /* SMGetChallengeResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMGetChallengeResponse.swift; sourceTree = "<group>"; };
+		B51A6AFAE2BC0B8C0E276C46C7C084DD /* SMTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMTransaction.swift; sourceTree = "<group>"; };
+		BBED88503B2F7169296652FDF17690FF /* SMTurnConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMTurnConfiguration.swift; sourceTree = "<group>"; };
+		BCB6B18D181B10ABE5C0D2CCCCD4804A /* Pods-ScreenMeetTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScreenMeetTests.modulemap"; sourceTree = "<group>"; };
+		BE3A3EBE05C8D8CCA72AABC6C542B758 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		BE64D8FA0C2F9E7D0592925E01BF833D /* MSProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSProducer.swift; sourceTree = "<group>"; };
+		C153D232AF98BEE2AC657949D970B21A /* SDPGrammar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SDPGrammar.swift; sourceTree = "<group>"; };
+		C165635B4563613A966E9A03FA27A0EA /* ScreenMeetSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ScreenMeetSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2CB5F4DBB0365231898A85645D5A36B /* SMCapabilitiesChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMCapabilitiesChannel.swift; sourceTree = "<group>"; };
+		C42498CD75F39675697E86114432B150 /* SocketManagerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManagerSpec.swift; path = Source/SocketIO/Manager/SocketManagerSpec.swift; sourceTree = "<group>"; };
+		C6A974710D10D0A963C4AE64AB75AF7A /* SMHandshakeTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMHandshakeTransaction.swift; sourceTree = "<group>"; };
+		C6C1DE5BD1F3B0DF62DA25F275E0D418 /* SMEntitlementsChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMEntitlementsChannel.swift; sourceTree = "<group>"; };
+		C81FFEF8F694CD91737639EFAEF9CF7E /* Pods-ScreenMeetTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreenMeetTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C84BB93EDB3D7461D8442368C264A302 /* VideoCapturerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoCapturerFactory.swift; sourceTree = "<group>"; };
+		C90A85406D18FDF4E162060152F30F4B /* MSPeerConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPeerConnection.swift; sourceTree = "<group>"; };
+		C96EAFC466B495279FA929810938A810 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientSpec.swift; path = Source/SocketIO/Client/SocketIOClientSpec.swift; sourceTree = "<group>"; };
+		CBD50FDDD7F8AD24812A9CA78196E94E /* SMParticipant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMParticipant.swift; sourceTree = "<group>"; };
+		CBEEEB9BD8BF7561CBEB1867228AF440 /* SMTextMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMTextMessage.swift; sourceTree = "<group>"; };
+		CD41F4C5306E8C6AE63A2BA3ED9F0589 /* SMNewTrackAvailableMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMNewTrackAvailableMessage.swift; sourceTree = "<group>"; };
+		CFDE81C1AFFBAAEC14884EEF22ECB3B5 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		D4D89FBBD63A24661187C394CB5791EF /* Socket.IO-Client-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-prefix.pch"; sourceTree = "<group>"; };
+		D50CE06559EB07243E339406AB721AAC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6AA3D26468D9CFEB5602032B749E4EE /* SMRequestService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMRequestService.swift; sourceTree = "<group>"; };
+		D7144F56BC0FFE93FF148DE636F68A1A /* GoogleWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleWebRTC.release.xcconfig; sourceTree = "<group>"; };
+		D727D23ADB3233219E83AAF8667299DA /* SocketAckManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckManager.swift; path = Source/SocketIO/Ack/SocketAckManager.swift; sourceTree = "<group>"; };
+		D7529F86F5A39CBE48089866B9630092 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		D7F0ECECC384C61CEB14246E49E0224D /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		D99E3CEF5EF64567FF4E2680FBEE65F0 /* Pods-ScreenMeet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenMeet-acknowledgements.plist"; sourceTree = "<group>"; };
+		DBB47CC49D39FCAF70AB2BD94020A0D2 /* UIView+TopmostView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+TopmostView.swift"; sourceTree = "<group>"; };
+		DDF05DB28AA5E829FC836180D55F2613 /* SMGetChallengeRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMGetChallengeRequest.swift; sourceTree = "<group>"; };
+		DEE0D0285038D143B1579E03443C74A9 /* SMChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMChannel.swift; sourceTree = "<group>"; };
+		DF03C762905E4DA9F241D06CBAB34728 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Frameworks/frameworks/WebRTC.framework; sourceTree = "<group>"; };
+		DF95DB2D403491CEC086F94A458D4FB3 /* SMLogEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMLogEvent.swift; sourceTree = "<group>"; };
+		E0FA035129560FE6CAA4C1C933599DAC /* SocketIOStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOStatus.swift; path = Source/SocketIO/Client/SocketIOStatus.swift; sourceTree = "<group>"; };
+		E173E6CA872CD3B7759EAFF48A029E56 /* Socket.IO-Client-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Socket.IO-Client-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		E2EBFD9C9F44618B1392F33AD1FE268A /* SMLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMLogger.swift; sourceTree = "<group>"; };
+		E45670EFB51CC9CDC458201E7456AF81 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71F3AD924332B9EE233DEED894990CC /* SMChatChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMChatChannel.swift; sourceTree = "<group>"; };
+		EC10397EE43F474539954FD59145B07F /* SMDiscoveryResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMDiscoveryResponse.swift; sourceTree = "<group>"; };
+		EC546A0A45AC040EED89057AA9CA42E0 /* Pods-ScreenMeet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreenMeet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED1904AA5E7B09EC205E4802086EED64 /* Pods-ScreenMeetTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenMeetTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EDA4A0A90BDAB35FF7B8C7CA61620858 /* MSConsumer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSConsumer.swift; sourceTree = "<group>"; };
+		F07F6033636BC196181F171D8BDCB08F /* MSMediaSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSMediaSection.swift; sourceTree = "<group>"; };
+		F13644DFAAFF5DE8903DF9F3AF07096C /* SMMediasoupChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMMediasoupChannel.swift; sourceTree = "<group>"; };
+		F228AE386A5B7685184E421E31571E8A /* Pods-ScreenMeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenMeet.debug.xcconfig"; sourceTree = "<group>"; };
+		F3AA7DF59AD49AFFFE1546CCCEEE94A6 /* Pods-ScreenMeetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenMeetTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5548BFFF98D1DAD0BE5481956FAAFAA /* SMSendTrackSocketReponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMSendTrackSocketReponse.swift; sourceTree = "<group>"; };
+		FBF70D91B41BBA154ECFE9AB44911993 /* SocketParsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketParsable.swift; path = Source/SocketIO/Parse/SocketParsable.swift; sourceTree = "<group>"; };
+		FF7237F4B5EA0757B07B9BB300F0A16E /* Socket.IO-Client-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Socket.IO-Client-Swift-dummy.m"; sourceTree = "<group>"; };
+		FF8D22F6716339C1F75DC3DA1C2E9239 /* ScreenMeet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenMeet.swift; path = ScreenMeetSDK/Classes/ScreenMeet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E52F5573064ED7A70B13A8214FFA45E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0841D89F864C337872653D6097D36018 /* Foundation.framework in Frameworks */,
+				A35E5E50722971A9DC5F91E0DF28F331 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314E7D7B508B85A5B78FB62A87981B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16FFD5FC61F3E37262C27B2F8B9303D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C4F6EF612F011F4180852B3CA6F487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A8812029DACF89E0530AE13C9BB983 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83D8C2C5A7A54C97EECF4E632E2CB772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2723D1FF62C0D0FC5509AC0B867248BA /* Foundation.framework in Frameworks */,
+				AA08538D519AF6E50923D0A13F5367C0 /* SocketIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F712EF8088006F763BDC078537520151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7502A44BED6433F453AD6F837BAEB79F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C1915BCC3225C4A65BBF2270087D18 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9A494867DD1C4EDF5D3C5474B07E30B0 /* SMWebSocketClient.swift */,
+				B0F7ADC103A30C526C6140CCD5FD85C1 /* Model */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		124C19303D095237CCD7F1BCDDDD91FF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6189252009F8C4D19F6D4F95EC18D3C3 /* SMSocketDataParser.swift */,
+				048415984E96677A486A3CFA827582BC /* SMStringifier.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1308B16B9C91BE09083D2F041A989BFC /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				60B47B235BF23C527A62643BCDC5D6EE /* Compression.swift */,
+				4EBDBB9DBC6B2DF45DA7F19FAAC8215C /* SSLClientCertificate.swift */,
+				96C18B6D338D5EB9ABCADD36BC68B0B4 /* SSLSecurity.swift */,
+				5C916E0159AD977BC224AE0FD5724B7C /* WebSocket.swift */,
+				73C9C64D6C6AB12E8F5F5DA879E28670 /* Support Files */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		19C23E8B044416714B53EF84EDCF9E46 /* Tracks & Encodings */ = {
+			isa = PBXGroup;
+			children = (
+				49A8DC61E02CEC6D368AB2F41CA5B887 /* SMEncodingsBuilder.swift */,
+				9D31DA21D24EF791A65A18F8D0FF0373 /* SMTracksManager.swift */,
+			);
+			path = "Tracks & Encodings";
+			sourceTree = "<group>";
+		};
+		1A456D1FBBDFFAE638F32717C6D40E3D /* SMRtcChannel */ = {
+			isa = PBXGroup;
+			children = (
+				221922F82CEDF112505517F29654F507 /* SMRtcChannel.swift */,
+			);
+			path = SMRtcChannel;
+			sourceTree = "<group>";
+		};
+		1E2F04D31EEB1119A1D87835AA6F86D3 /* Pods-ScreenMeetTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6B18D181B10ABE5C0D2CCCCD4804A /* Pods-ScreenMeetTests.modulemap */,
+				C81FFEF8F694CD91737639EFAEF9CF7E /* Pods-ScreenMeetTests-acknowledgements.markdown */,
+				ED1904AA5E7B09EC205E4802086EED64 /* Pods-ScreenMeetTests-acknowledgements.plist */,
+				5AFE69FD14CBA43C19E113445474D257 /* Pods-ScreenMeetTests-dummy.m */,
+				14E60B685DE4E80B32E428F27767D17C /* Pods-ScreenMeetTests-frameworks.sh */,
+				6FB58783CB3353F07CBA59351E48E23D /* Pods-ScreenMeetTests-Info.plist */,
+				06D443928C40551815E394933CE99A6A /* Pods-ScreenMeetTests-umbrella.h */,
+				3CB81007A995F191C293EE003ED7586F /* Pods-ScreenMeetTests.debug.xcconfig */,
+				F3AA7DF59AD49AFFFE1546CCCEEE94A6 /* Pods-ScreenMeetTests.release.xcconfig */,
+			);
+			name = "Pods-ScreenMeetTests";
+			path = "Target Support Files/Pods-ScreenMeetTests";
+			sourceTree = "<group>";
+		};
+		211D8D8DC9B75C98C3C0BE191A7757AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E45670EFB51CC9CDC458201E7456AF81 /* SocketIO.framework */,
+				D50CE06559EB07243E339406AB721AAC /* Starscream.framework */,
+				A9ADF252A2ACB8A295C8E72C3157F948 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22C4E543D0A2C4CD7250BF99FA4E80A1 /* Entitlements */ = {
+			isa = PBXGroup;
+			children = (
+				5D3F520C63AED64EF5CCB6CFE3C1EF0E /* SMEntitlementModel.swift */,
+				C6C1DE5BD1F3B0DF62DA25F275E0D418 /* SMEntitlementsChannel.swift */,
+				2F5BF85C4BECFCE07D0FF3E1BD47F51A /* SMEntitlementType.swift */,
+			);
+			path = Entitlements;
+			sourceTree = "<group>";
+		};
+		2364B982730625B0E1A69A928766E613 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				634CD7F5E8821700C89E578294BC5E54 /* SMError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		25599B2A7FE8459C038094BC10F7026A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59D778740F36B156F5F5A8439174DDF3 /* GoogleWebRTC.debug.xcconfig */,
+				D7144F56BC0FFE93FF148DE636F68A1A /* GoogleWebRTC.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleWebRTC";
+			sourceTree = "<group>";
+		};
+		42BF6DECAE3FB0D109033BC2A96ECBD8 /* RemoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				4200AB5F601AD9FECA511FC295B8EB54 /* SMRemoteControlChannel.swift */,
+				71704F782BFA4BC7CF4D64A7B1A30E81 /* SMRemoteControlService.swift */,
+				A476D534C69576E27016AA271776C2A1 /* Events */,
+			);
+			path = RemoteControl;
+			sourceTree = "<group>";
+		};
+		448F580F29BEB49C7E9119EF39CF01F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09B18D9A4D7971876043892FB062FF56 /* Pods_ScreenMeet.framework */,
+				4D02205B1B82C97247F1791747E19A9C /* Pods_ScreenMeetTests.framework */,
+				1BA27FC479491F8FFC38DEB9E69DC552 /* ScreenMeetSDK.framework */,
+				50C0B0879B7086918A819F704BF40B4B /* SocketIO.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DFA71806807687D8A39F405F3066852 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				8543A30B859658447CDEF73DB5626D02 /* SMTransport.swift */,
+				E0A4955528AD4E90DA1396A05755DEA0 /* Channels */,
+				124C19303D095237CCD7F1BCDDDD91FF /* Common */,
+				51B383EA0C38A032EC428663954B64CC /* Rest */,
+				05C1915BCC3225C4A65BBF2270087D18 /* WebSocket */,
+			);
+			name = Transport;
+			path = ScreenMeetSDK/Classes/Transport;
+			sourceTree = "<group>";
+		};
+		4E4896FCCB40B353CEE19EC3CF8148B4 /* SDPTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				C153D232AF98BEE2AC657949D970B21A /* SDPGrammar.swift */,
+				428539084DEB6BEE29C5F04478B6B942 /* SDPRule.swift */,
+				0D39888C36B8937918C4631B011E6470 /* SDPTransform.swift */,
+				5261BD21C975D8831C5182BB0FE5DA03 /* StringExtension.swift */,
+			);
+			path = SDPTransformations;
+			sourceTree = "<group>";
+		};
+		51B383EA0C38A032EC428663954B64CC /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				7F5F4C0A88B0BF86A9102D365DD38B2C /* SMConnectRequest.swift */,
+				A7A479CF82B830945ABEAD962FD96E54 /* SMConnectResponse.swift */,
+				96BA4025D8ED32453BD9542A62BCCD2B /* SMDiscoveryRequest.swift */,
+				EC10397EE43F474539954FD59145B07F /* SMDiscoveryResponse.swift */,
+				6D298CA8D6054D5B7152077ED22957E8 /* SMDiscoverySessionByPinRequest.swift */,
+				77BE85DC0ACE506740DE750BBD3E4752 /* SMDiscoverySessionByPinResponse.swift */,
+				DDF05DB28AA5E829FC836180D55F2613 /* SMGetChallengeRequest.swift */,
+				B1411172EF051040648ADB28CF67381D /* SMGetChallengeResponse.swift */,
+				4004E808E582D6F340C5D1028834DEA1 /* SMResolveChallengeRequest.swift */,
+				AEEFE1CE613874684B172B1F75B01CB3 /* SMRestClient.swift */,
+				DF37EFD6C44CB6665E2E251AD8C4DEAB /* engine */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		5B5D0E5B293C8EB987A50279ACAFA80E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				48748B22333A4D5D38372B2F5516F547 /* SMRequestModel.swift */,
+				6CA88C9560D430FAF13C40620649E075 /* SMRequestsChannel.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		5DBB83CBEF7665B990D9BC35FEA87BF7 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				06D0C8DC00BD596C37102D0A2FC3EB27 /* MSLogger.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		690A8ACA748C92A71DA2EF0DE80A93CE /* SMMediasoupChannel */ = {
+			isa = PBXGroup;
+			children = (
+				F13644DFAAFF5DE8903DF9F3AF07096C /* SMMediasoupChannel.swift */,
+				19C23E8B044416714B53EF84EDCF9E46 /* Tracks & Encodings */,
+			);
+			path = SMMediasoupChannel;
+			sourceTree = "<group>";
+		};
+		6D4DF268C2573DDEC4EC7F266586DCE0 /* Socket.IO-Client-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				31B4088850FC8F28D4FD9DB392EA847B /* SocketAckEmitter.swift */,
+				D727D23ADB3233219E83AAF8667299DA /* SocketAckManager.swift */,
+				A58F37999236FBF9FC1935612ADABDCB /* SocketAnyEvent.swift */,
+				7CBB0C8EDBECB7638E9E144E0197D2D7 /* SocketEngine.swift */,
+				8B688E720A2AEFFCB4737BC6251F8815 /* SocketEngineClient.swift */,
+				6B2DE615D204CDAB3D91E099F69DA918 /* SocketEnginePacketType.swift */,
+				549CCBBDA29AEB546D72CB5D2FC060F5 /* SocketEnginePollable.swift */,
+				9E488CDBDB0855805761269C20374F4E /* SocketEngineSpec.swift */,
+				432EBFF4346E05C3DF0006F3036F585B /* SocketEngineWebsocket.swift */,
+				66A0FD76EB8366313ED983E6BEBF07BE /* SocketEventHandler.swift */,
+				317DB2A55E6E957D840A19B3839874AB /* SocketExtensions.swift */,
+				4323811E24D35FD5A90D83148A51F256 /* SocketIOClient.swift */,
+				38045D5331AC2BF9A90E78D03DE2A266 /* SocketIOClientConfiguration.swift */,
+				A64EB50A1D2F193EA101AEA6F417295E /* SocketIOClientOption.swift */,
+				C96EAFC466B495279FA929810938A810 /* SocketIOClientSpec.swift */,
+				E0FA035129560FE6CAA4C1C933599DAC /* SocketIOStatus.swift */,
+				AD858847371C34A6D404DE22B575442A /* SocketLogger.swift */,
+				69D6E8E408602C885603CFF833406E24 /* SocketManager.swift */,
+				C42498CD75F39675697E86114432B150 /* SocketManagerSpec.swift */,
+				64DD6962F5DC63AD0EC95F3CCD9017E4 /* SocketPacket.swift */,
+				FBF70D91B41BBA154ECFE9AB44911993 /* SocketParsable.swift */,
+				41870D2303B52AEF9DEC894404BB08DF /* SocketRawView.swift */,
+				78FFEAF47A4D0B7BD93479B62886FCCB /* SocketStringReader.swift */,
+				8054B82B2D66CCF5A7178A80F01DEB4A /* SocketTypes.swift */,
+				AB7E868DC0165D6AF9EADAB806C7C33C /* SSLSecurity.swift */,
+				AFD37D94E4FF6CBFED011388A8451C90 /* Support Files */,
+			);
+			path = "Socket.IO-Client-Swift";
+			sourceTree = "<group>";
+		};
+		73C9C64D6C6AB12E8F5F5DA879E28670 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				997F7C47C913D02F3A51FDC4F1FC9476 /* Starscream.modulemap */,
+				0FCEECA9463F638F86F7A12E3D36CDC9 /* Starscream-dummy.m */,
+				BE3A3EBE05C8D8CCA72AABC6C542B758 /* Starscream-Info.plist */,
+				D7529F86F5A39CBE48089866B9630092 /* Starscream-prefix.pch */,
+				ABE6C9277A4BE876CAEC7F3BE813A5C9 /* Starscream-umbrella.h */,
+				D7F0ECECC384C61CEB14246E49E0224D /* Starscream.debug.xcconfig */,
+				CFDE81C1AFFBAAEC14884EEF22ECB3B5 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		8965128F0E6A2F66808563C6DD62A210 /* GoogleWebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				AA7535F09876E0C6FA69A65424D4692D /* Frameworks */,
+				25599B2A7FE8459C038094BC10F7026A /* Support Files */,
+			);
+			path = GoogleWebRTC;
+			sourceTree = "<group>";
+		};
+		954E949290597A69F9708EEAD1A86464 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F406964C429161586E13EB083BF222C /* ScreenMeetSDK.modulemap */,
+				0E4916BE99131CD5BFA9E399A374D214 /* ScreenMeetSDK-dummy.m */,
+				AE98BFA34562125D8FCD65520A5EA056 /* ScreenMeetSDK-Info.plist */,
+				AAE9D93A5694FC1C195E2C39154D821B /* ScreenMeetSDK-prefix.pch */,
+				52BC71ECA9711F17D67BF2DCAF6EE617 /* ScreenMeetSDK-umbrella.h */,
+				84B3AAA08F8515756F2151DFFD04E2A3 /* ScreenMeetSDK.debug.xcconfig */,
+				5D526636407B4A5DAD8A9AD55ED8BC2C /* ScreenMeetSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ScreenMeetSDK";
+			sourceTree = "<group>";
+		};
+		957DA511FA1ABA28CE802617E48ECB2F /* Participants */ = {
+			isa = PBXGroup;
+			children = (
+				CBD50FDDD7F8AD24812A9CA78196E94E /* SMParticipant.swift */,
+				15A59E05FCC4A3F0F757F501E22F50E3 /* SMParticipantsChannel.swift */,
+			);
+			path = Participants;
+			sourceTree = "<group>";
+		};
+		9991709410D46AF1FD8EE6CF8BFE006D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				16694BC93E991F26B0898D13E547F4DD /* LICENSE */,
+				7203E4C5F3FDFC3D478024051931A5BA /* README.md */,
+				C165635B4563613A966E9A03FA27A0EA /* ScreenMeetSDK.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9FF71E7F3E76C6A2116D02F543399A89 /* AppStream */ = {
+			isa = PBXGroup;
+			children = (
+				36405F3B557E5E6448976D57B47A221D /* SMAppStreamService.swift */,
+				8F1CBFB1E70ECA04153E3898C8E7D991 /* SMConfidentialRect.swift */,
+				17E4D912C7627E9A5D9407B9471C31BC /* SMConfidentialView.swift */,
+				478AF25E0445F83624FBD79EEB2596F8 /* SMConfidentialWebView.swift */,
+				45A27D79CCDFFBA2FA8E70F6606A26DB /* SMFrameProcessor.swift */,
+			);
+			path = AppStream;
+			sourceTree = "<group>";
+		};
+		A3449970DEA5852AE3496EBD5933B120 /* CallerState */ = {
+			isa = PBXGroup;
+			children = (
+				3C00181C1B6761BDF30B63F23D9594AF /* SMCallerState.swift */,
+				5C124EA2296CC5064341386E264377DB /* SMCallerStateChannel.swift */,
+			);
+			path = CallerState;
+			sourceTree = "<group>";
+		};
+		A476D534C69576E27016AA271776C2A1 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				2D2D12F79C88F85013A7B330BD5E6DD4 /* SMRemoteControlEvent.swift */,
+				04AB48C1AFDD14A56A2C36B6429F88AA /* SMRemoteControlKeyboardEvent.swift */,
+				7EB53A561D8C87FFCD96D800B31ECFED /* SMRemoteControlMouseEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		A847424E51DD09C2A56EA664872C075E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8965128F0E6A2F66808563C6DD62A210 /* GoogleWebRTC */,
+				6D4DF268C2573DDEC4EC7F266586DCE0 /* Socket.IO-Client-Swift */,
+				1308B16B9C91BE09083D2F041A989BFC /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9ADF252A2ACB8A295C8E72C3157F948 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54DD0912AF641EA23045DADE4AA57A32 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AA7535F09876E0C6FA69A65424D4692D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF03C762905E4DA9F241D06CBAB34728 /* WebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFD37D94E4FF6CBFED011388A8451C90 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87AF4EC0028730A9F24543D18ADC979C /* Socket.IO-Client-Swift.modulemap */,
+				FF7237F4B5EA0757B07B9BB300F0A16E /* Socket.IO-Client-Swift-dummy.m */,
+				9241EF4C928D2495B5C794E9684E84B8 /* Socket.IO-Client-Swift-Info.plist */,
+				D4D89FBBD63A24661187C394CB5791EF /* Socket.IO-Client-Swift-prefix.pch */,
+				20BBE6C7B26A716133B13D866241F1A8 /* Socket.IO-Client-Swift-umbrella.h */,
+				4717810A56FD73456B99982179A887EC /* Socket.IO-Client-Swift.debug.xcconfig */,
+				E173E6CA872CD3B7759EAFF48A029E56 /* Socket.IO-Client-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Socket.IO-Client-Swift";
+			sourceTree = "<group>";
+		};
+		AFDA5A992843CAF0AE8CC3B9C1382B85 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				54C2F444DF3135BB553B6774CC44BBD4 /* SMSession.swift */,
+				FAD06370C005C3596B0720168D659A1E /* Transactions */,
+			);
+			name = Session;
+			path = ScreenMeetSDK/Classes/Session;
+			sourceTree = "<group>";
+		};
+		B0F7ADC103A30C526C6140CCD5FD85C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E28BE01A232783F55E060AD585AD82E /* SMChannelMessage.swift */,
+				23611296CA015D993861442EEBE71A0A /* SMConnectTransportPayload.swift */,
+				5F573E3DFFEF030584CD5366183E6582 /* SMHandshakeOptions.swift */,
+				37147210268E910E7C8092BBE1B9DE12 /* SMIceCandidate.swift */,
+				65CE1997AC9F2936783E76C79A0C0D4B /* SMIdentityInfo.swift */,
+				AF3BCAADDBACE0806537D02BF488E23C /* SMInitializationPayload.swift */,
+				DF95DB2D403491CEC086F94A458D4FB3 /* SMLogEvent.swift */,
+				CD41F4C5306E8C6AE63A2BA3ED9F0589 /* SMNewTrackAvailableMessage.swift */,
+				6EF5EB3CFFA198023AD9E9645F337B0E /* SMResumeTrackPayload.swift */,
+				6B0C096FAB7688A551DD46D3BFABF405 /* SMSendTrackPayload.swift */,
+				F5548BFFF98D1DAD0BE5481956FAAFAA /* SMSendTrackSocketReponse.swift */,
+				04D990AB1EC7C1BCF81F8E12A8B1C0D7 /* SMTransportOptions.swift */,
+				BBED88503B2F7169296652FDF17690FF /* SMTurnConfiguration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7C11A45660102DF036EA4BC549EDB77 /* Capabilities */ = {
+			isa = PBXGroup;
+			children = (
+				C2CB5F4DBB0365231898A85645D5A36B /* SMCapabilitiesChannel.swift */,
+			);
+			path = Capabilities;
+			sourceTree = "<group>";
+		};
+		C4E6F1C6E9D31C3CBD1A2B19175F0E39 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2EBFD9C9F44618B1392F33AD1FE268A /* SMLogger.swift */,
+				DBB47CC49D39FCAF70AB2BD94020A0D2 /* UIView+TopmostView.swift */,
+			);
+			name = Utils;
+			path = ScreenMeetSDK/Classes/Utils;
+			sourceTree = "<group>";
+		};
+		CCCE1294EED4AE6974C16ADC5CED2458 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF5C09BEF1A25732372C02BB3F739DC4 /* ScreenMeetSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CD20332BAA0891C65FFFADFD427D017D /* SDP */ = {
+			isa = PBXGroup;
+			children = (
+				F07F6033636BC196181F171D8BDCB08F /* MSMediaSection.swift */,
+				5146D4975317AE9A640C08D05AD3DAB6 /* MSRemoteSDP.swift */,
+				060E18A830C600AE3BC32DFBBA4EE817 /* SDPUtils.swift */,
+			);
+			path = SDP;
+			sourceTree = "<group>";
+		};
+		CD572EC02DA944B9682217A1CD488A78 /* LaserPointer */ = {
+			isa = PBXGroup;
+			children = (
+				AB1AB36EE6726D2D06406BAE60EFDC22 /* SMLaserPointerChannel.swift */,
+				1DF8ACCE516F860D65CBFA75C5C51AF1 /* SMLaserPointerModel.swift */,
+				3DFD7DDB059F2E016350A18FD019E26D /* SMLaserPointerService.swift */,
+			);
+			path = LaserPointer;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				CCCE1294EED4AE6974C16ADC5CED2458 /* Development Pods */,
+				211D8D8DC9B75C98C3C0BE191A7757AC /* Frameworks */,
+				A847424E51DD09C2A56EA664872C075E /* Pods */,
+				448F580F29BEB49C7E9119EF39CF01F0 /* Products */,
+				E7D0FC69D44F391909D821E8EB6C7627 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D80256E904FD9C0FBAF9C7D8362118E2 /* Encoder & Decoder Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A9E9A1E1FEB96C1F4790F6D36260EF79 /* MSVideoEncoderFactory.swift */,
+			);
+			path = "Encoder & Decoder Factories";
+			sourceTree = "<group>";
+		};
+		D9AC434128886940C5063500460F6D7D /* infolog */ = {
+			isa = PBXGroup;
+			children = (
+				60CF17F6C020F198D22184F08A12F990 /* SMLogCapturerChangeTransaction.swift */,
+				6624ACF79DAAAE0569E5E4E58478758E /* SMLogRoomCodeUsageTransaction.swift */,
+			);
+			path = infolog;
+			sourceTree = "<group>";
+		};
+		DA42EA4F02CBE888146125E9C04BA9B2 /* Pods-ScreenMeet */ = {
+			isa = PBXGroup;
+			children = (
+				A732594F448B221E473CEBB98B43AA1E /* Pods-ScreenMeet.modulemap */,
+				EC546A0A45AC040EED89057AA9CA42E0 /* Pods-ScreenMeet-acknowledgements.markdown */,
+				D99E3CEF5EF64567FF4E2680FBEE65F0 /* Pods-ScreenMeet-acknowledgements.plist */,
+				56329EF90AC5BFF48FC4BB264721AADC /* Pods-ScreenMeet-dummy.m */,
+				4097CA6172B02D373C5EE0A52AB54F48 /* Pods-ScreenMeet-frameworks.sh */,
+				39DA1521AA3937F4BCF6AEFAF3E57878 /* Pods-ScreenMeet-Info.plist */,
+				8E955BA57C2CFCA2FFDC8D82F098929A /* Pods-ScreenMeet-umbrella.h */,
+				F228AE386A5B7685184E421E31571E8A /* Pods-ScreenMeet.debug.xcconfig */,
+				5087CE096E2EC1C116B2BC7802CD3D9E /* Pods-ScreenMeet.release.xcconfig */,
+			);
+			name = "Pods-ScreenMeet";
+			path = "Target Support Files/Pods-ScreenMeet";
+			sourceTree = "<group>";
+		};
+		DF37EFD6C44CB6665E2E251AD8C4DEAB /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				1C2F2DE72D10CCCBA6E5A8565542C97E /* Deserializable.swift */,
+				2FCB1ED01AEA187B9FED44EBD705A023 /* SMRequest.swift */,
+				29ACB0D13CF25D36A7AFACCE08173D79 /* SMRequestHTTPService.swift */,
+				D6AA3D26468D9CFEB5602032B749E4EE /* SMRequestService.swift */,
+				82746998A5C0243761E73E646DBE947B /* SMResponse.swift */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		DF5C09BEF1A25732372C02BB3F739DC4 /* ScreenMeetSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FF8D22F6716339C1F75DC3DA1C2E9239 /* ScreenMeet.swift */,
+				E2D33B1380A866CFD6C788E51C5AE35F /* MediasoupSwift */,
+				9991709410D46AF1FD8EE6CF8BFE006D /* Pod */,
+				AFDA5A992843CAF0AE8CC3B9C1382B85 /* Session */,
+				954E949290597A69F9708EEAD1A86464 /* Support Files */,
+				4DFA71806807687D8A39F405F3066852 /* Transport */,
+				C4E6F1C6E9D31C3CBD1A2B19175F0E39 /* Utils */,
+			);
+			name = ScreenMeetSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E0A4955528AD4E90DA1396A05755DEA0 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				DEE0D0285038D143B1579E03443C74A9 /* SMChannel.swift */,
+				08C4789904429FE7BF90D75740EFB2FB /* SMChannelsManager.swift */,
+				A3449970DEA5852AE3496EBD5933B120 /* CallerState */,
+				B7C11A45660102DF036EA4BC549EDB77 /* Capabilities */,
+				FF3DAB2764460E40D841E9BD872458FD /* Chat */,
+				22C4E543D0A2C4CD7250BF99FA4E80A1 /* Entitlements */,
+				CD572EC02DA944B9682217A1CD488A78 /* LaserPointer */,
+				957DA511FA1ABA28CE802617E48ECB2F /* Participants */,
+				42BF6DECAE3FB0D109033BC2A96ECBD8 /* RemoteControl */,
+				5B5D0E5B293C8EB987A50279ACAFA80E /* Requests */,
+				690A8ACA748C92A71DA2EF0DE80A93CE /* SMMediasoupChannel */,
+				1A456D1FBBDFFAE638F32717C6D40E3D /* SMRtcChannel */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		E2D33B1380A866CFD6C788E51C5AE35F /* MediasoupSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2D0FA4132E5879E6DFD67BADFBB6CC6B /* CameraVideoCapturer.swift */,
+				EDA4A0A90BDAB35FF7B8C7CA61620858 /* MSConsumer.swift */,
+				475C73229AFDAE7213E31513E159B602 /* MSDevice.swift */,
+				0349FC198ED95BB21819E84FC06452AE /* MSError.swift */,
+				947CBB3C283EADA211670400A0E63F90 /* MSHandler.swift */,
+				08A4A12C3D81A2026AB9BCF26D41E35E /* MSOrtc.swift */,
+				C90A85406D18FDF4E162060152F30F4B /* MSPeerConnection.swift */,
+				BE64D8FA0C2F9E7D0592925E01BF833D /* MSProducer.swift */,
+				335EA50D6D89C8B363E9733BFB2CBFB0 /* MSTransport.swift */,
+				3C216963FBB6B1D164C08DB3D0719F82 /* ScreenVideoCapturer.swift */,
+				C84BB93EDB3D7461D8442368C264A302 /* VideoCapturerFactory.swift */,
+				9FF71E7F3E76C6A2116D02F543399A89 /* AppStream */,
+				D80256E904FD9C0FBAF9C7D8362118E2 /* Encoder & Decoder Factories */,
+				E45F6267BA1B7959B30C122D1D504541 /* H264-profile-level-id */,
+				5DBB83CBEF7665B990D9BC35FEA87BF7 /* Logs */,
+				CD20332BAA0891C65FFFADFD427D017D /* SDP */,
+				4E4896FCCB40B353CEE19EC3CF8148B4 /* SDPTransformations */,
+			);
+			name = MediasoupSwift;
+			path = ScreenMeetSDK/Classes/MediasoupSwift;
+			sourceTree = "<group>";
+		};
+		E45F6267BA1B7959B30C122D1D504541 /* H264-profile-level-id */ = {
+			isa = PBXGroup;
+			children = (
+				62B3D4A9343879ED1710BBF19B5BA62A /* H264.swift */,
+			);
+			path = "H264-profile-level-id";
+			sourceTree = "<group>";
+		};
+		E7D0FC69D44F391909D821E8EB6C7627 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA42EA4F02CBE888146125E9C04BA9B2 /* Pods-ScreenMeet */,
+				1E2F04D31EEB1119A1D87835AA6F86D3 /* Pods-ScreenMeetTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FAD06370C005C3596B0720168D659A1E /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				1BB328AD96EF3ED723AB6E7DA11BCD68 /* SMAudioStateTransaction.swift */,
+				45AE85124D2C6846D88B6A74E270757A /* SMDisconnectTransaction.swift */,
+				C6A974710D10D0A963C4AE64AB75AF7A /* SMHandshakeTransaction.swift */,
+				ADA79DE2A77321CA4175923FDDEC1DF0 /* SMStartWebRTCTransaction.swift */,
+				B51A6AFAE2BC0B8C0E276C46C7C084DD /* SMTransaction.swift */,
+				8F316045EABFD47C41CA6F37FB65FF2C /* SMVideoStateTransaction.swift */,
+				2364B982730625B0E1A69A928766E613 /* Error */,
+				D9AC434128886940C5063500460F6D7D /* infolog */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		FF3DAB2764460E40D841E9BD872458FD /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E71F3AD924332B9EE233DEED894990CC /* SMChatChannel.swift */,
+				CBEEEB9BD8BF7561CBEB1867228AF440 /* SMTextMessage.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B3ECAB0AE54746A42833C0578E113BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DAF0FB64E1A2740910EC15B09E2A9D /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4F2BD73EBDC03190FAA6DEA65D0398 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66EE8DEC22728025F1F396AFF16C41E /* Pods-ScreenMeet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385A6A5A3BEE57620DFEA3A44662A11F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7712FF743DA9FC45C3AC63F9E211FF /* Socket.IO-Client-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA6CB9E3394E43ACF30AD4B41F183AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3242B6DA22A2D2798021773A51A478 /* Pods-ScreenMeetTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9E6F9F643D6121F4759FF989FC22F0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9E9FEA7D6077792937DB7D616131E8 /* ScreenMeetSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1710B65A2B705C9DA24D39698675800D /* Pods-ScreenMeet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9CDAD17FA7BA1F46F243CEDB5E33B6A /* Build configuration list for PBXNativeTarget "Pods-ScreenMeet" */;
+			buildPhases = (
+				2E4F2BD73EBDC03190FAA6DEA65D0398 /* Headers */,
+				7590AA21A9C86CC878876A522CE7AC1B /* Sources */,
+				63C4F6EF612F011F4180852B3CA6F487 /* Frameworks */,
+				C1639E87238B15188B9C473A2AAB11BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8190CEC02BC60183188AE08C7674D9A8 /* PBXTargetDependency */,
+				2550B1ABD127F996AE5DD31DAF007775 /* PBXTargetDependency */,
+				9D8FBFFB9A2A4F58F9E1F8BD90D58086 /* PBXTargetDependency */,
+				4F982B41C15AEF6C09E0A835B33D83A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-ScreenMeet";
+			productName = "Pods-ScreenMeet";
+			productReference = 09B18D9A4D7971876043892FB062FF56 /* Pods_ScreenMeet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C33772663A449206C0FBFC99FF21C7B /* ScreenMeetSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9769A648B9A11DB1A5C41B1BAF9E10 /* Build configuration list for PBXNativeTarget "ScreenMeetSDK" */;
+			buildPhases = (
+				C9E6F9F643D6121F4759FF989FC22F0C /* Headers */,
+				1598D57212653602F0B77AE582F8795B /* Sources */,
+				83D8C2C5A7A54C97EECF4E632E2CB772 /* Frameworks */,
+				3A9CE85CDF03B805D9344B8EACCB1FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78BC60FFC5E87F92083DDBDA00F4E30 /* PBXTargetDependency */,
+				7FE83B5D464A0CB3B101864503A5B7DD /* PBXTargetDependency */,
+			);
+			name = ScreenMeetSDK;
+			productName = ScreenMeetSDK;
+			productReference = 1BA27FC479491F8FFC38DEB9E69DC552 /* ScreenMeetSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		950935C400CFE7574D7E5394948CD103 /* Pods-ScreenMeetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA853CC38153B717527C0AF9487EEFAC /* Build configuration list for PBXNativeTarget "Pods-ScreenMeetTests" */;
+			buildPhases = (
+				8DA6CB9E3394E43ACF30AD4B41F183AD /* Headers */,
+				5A4EB1867436BDFB8AE5882B71A2B5A6 /* Sources */,
+				314E7D7B508B85A5B78FB62A87981B7F /* Frameworks */,
+				AAE2FC40A2129ED3E6677B18477AAED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA769B5F8A5301D02ADDCE8CFCAB9439 /* PBXTargetDependency */,
+				0EC8A2B70FDF900C4820EC6F4F95CAEA /* PBXTargetDependency */,
+				6659C56A1128D525519AFD8A6396869D /* PBXTargetDependency */,
+				802840F8C160A18A548D109056DD9C8B /* PBXTargetDependency */,
+			);
+			name = "Pods-ScreenMeetTests";
+			productName = "Pods-ScreenMeetTests";
+			productReference = 4D02205B1B82C97247F1791747E19A9C /* Pods_ScreenMeetTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE3EACAA502967075F54619E9EA388C9 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				2B3ECAB0AE54746A42833C0578E113BD /* Headers */,
+				32814B84AFFA316ECCA714A9C9D1AD66 /* Sources */,
+				F712EF8088006F763BDC078537520151 /* Frameworks */,
+				0DE719A0BC4E777CD9B2DD6F402E0946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A44D85440C5D58BC5C4D70A539C5EEF0 /* Socket.IO-Client-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F462B2568973ADC2830479182F5D85C3 /* Build configuration list for PBXNativeTarget "Socket.IO-Client-Swift" */;
+			buildPhases = (
+				385A6A5A3BEE57620DFEA3A44662A11F /* Headers */,
+				09014C06305173835CAD24734B5C6B9C /* Sources */,
+				2E52F5573064ED7A70B13A8214FFA45E /* Frameworks */,
+				1EBD3469D48D0557EA9482F107AAD277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				318F0F6AB95F85A114D30E321A6CC05F /* PBXTargetDependency */,
+			);
+			name = "Socket.IO-Client-Swift";
+			productName = "Socket.IO-Client-Swift";
+			productReference = 50C0B0879B7086918A819F704BF40B4B /* SocketIO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 448F580F29BEB49C7E9119EF39CF01F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */,
+				1710B65A2B705C9DA24D39698675800D /* Pods-ScreenMeet */,
+				950935C400CFE7574D7E5394948CD103 /* Pods-ScreenMeetTests */,
+				7C33772663A449206C0FBFC99FF21C7B /* ScreenMeetSDK */,
+				A44D85440C5D58BC5C4D70A539C5EEF0 /* Socket.IO-Client-Swift */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DE719A0BC4E777CD9B2DD6F402E0946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EBD3469D48D0557EA9482F107AAD277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A9CE85CDF03B805D9344B8EACCB1FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE2FC40A2129ED3E6677B18477AAED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1639E87238B15188B9C473A2AAB11BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09014C06305173835CAD24734B5C6B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453FE6B80FA22CC5498C2CC28615B861 /* Socket.IO-Client-Swift-dummy.m in Sources */,
+				B9FF06F7460FBA90163EEE47218529A6 /* SocketAckEmitter.swift in Sources */,
+				4E46410CD856E81303CEFFF116412E57 /* SocketAckManager.swift in Sources */,
+				2999455B9E2DC739D19FC9EEAC060703 /* SocketAnyEvent.swift in Sources */,
+				BCA813445E74FAD518BABA1B5C167584 /* SocketEngine.swift in Sources */,
+				A722D579A499DB5D03426156A4232DB2 /* SocketEngineClient.swift in Sources */,
+				0DC4768C3765D8512D0C2084BEAD67DB /* SocketEnginePacketType.swift in Sources */,
+				6E145713AE5E5033BECBEF160691C575 /* SocketEnginePollable.swift in Sources */,
+				A020612D1C0FBDF5DE0ED5FF21517924 /* SocketEngineSpec.swift in Sources */,
+				21DFAA85B2A8AAEF75D855CCA5060524 /* SocketEngineWebsocket.swift in Sources */,
+				A136A62A648642D572CF3E6897F8A4D0 /* SocketEventHandler.swift in Sources */,
+				8FD8B8450A9BAC6BC91FF520447BBC95 /* SocketExtensions.swift in Sources */,
+				5031A9A7E8948A38C49DB1E9C1B1DFE7 /* SocketIOClient.swift in Sources */,
+				38C8D50B41531235318DFF8521A8EE5D /* SocketIOClientConfiguration.swift in Sources */,
+				FC213DA09D2AA9360212C9A57D1929C8 /* SocketIOClientOption.swift in Sources */,
+				84B2DD54A5DF544807C7FD9203F56584 /* SocketIOClientSpec.swift in Sources */,
+				D0E35BC4076899F5A3868E78F80EF7EB /* SocketIOStatus.swift in Sources */,
+				87F82AA6EB89A0BD69A6706293FD858F /* SocketLogger.swift in Sources */,
+				2C8971FA29BEA3C95BB79565E5407E7B /* SocketManager.swift in Sources */,
+				BDDBA13F25FD1A51DA319A9FC6D3F126 /* SocketManagerSpec.swift in Sources */,
+				E1D645C53B80E6D4FAE86781F62CECE8 /* SocketPacket.swift in Sources */,
+				47E7ACE671C17A681BE3516DDBB13F02 /* SocketParsable.swift in Sources */,
+				3A59F655AE00090C61BE4B5BDB19D955 /* SocketRawView.swift in Sources */,
+				33012C9318B6E8ADADA1A66863989EC9 /* SocketStringReader.swift in Sources */,
+				E1FA80F30EBBD19E26A60356E5B6B3A9 /* SocketTypes.swift in Sources */,
+				B3C160212335110C2A78522B1BFB6ACA /* SSLSecurity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1598D57212653602F0B77AE582F8795B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C78723C7A8F8ADBFB4DE33535501E1 /* CameraVideoCapturer.swift in Sources */,
+				73F6DB2201F47B51B279CBB91D9B3E76 /* Deserializable.swift in Sources */,
+				423D24DD116D179687E1C30E0A49EDB8 /* H264.swift in Sources */,
+				6FA93D479494D46DECE826FBE5728891 /* MSConsumer.swift in Sources */,
+				ABC48D61C4116C150A444339A755D917 /* MSDevice.swift in Sources */,
+				DB4C4F3DDAACE376F95E0C49AF3E738B /* MSError.swift in Sources */,
+				400663F84DEC0191A2B97F93ED010287 /* MSHandler.swift in Sources */,
+				E11A5D1213B465F379C2843C01ECD666 /* MSLogger.swift in Sources */,
+				8B0BCE81ED6CB4E5996C77EC4A20E916 /* MSMediaSection.swift in Sources */,
+				EF044DB3C21F09FF0988252DA757E5D5 /* MSOrtc.swift in Sources */,
+				E5226B524EEFA7CA4E943CD6F9A36AAF /* MSPeerConnection.swift in Sources */,
+				317CC8305E25207233F791921BD90417 /* MSProducer.swift in Sources */,
+				A9C192B574EA9B49D08699A2C0F43F1B /* MSRemoteSDP.swift in Sources */,
+				6C8B5CC9A2182E1E236AD70AC018C61A /* MSTransport.swift in Sources */,
+				4F9A1F0FE45A2E14ED130FC16DC2778E /* MSVideoEncoderFactory.swift in Sources */,
+				D8E3F63B903E0EEA0215A18E999531CD /* ScreenMeet.swift in Sources */,
+				158E7EBCAF3AD148476122A20AAD37AA /* ScreenMeetSDK-dummy.m in Sources */,
+				D60BD80DAF65044E2591C75602E690E7 /* ScreenVideoCapturer.swift in Sources */,
+				9D4307B576BDC0A6716503F5994376EF /* SDPGrammar.swift in Sources */,
+				1E0A097DF330A8F1642B99C775C4A6BC /* SDPRule.swift in Sources */,
+				44FC71EE2179F1BC2658ECA8FD755FF2 /* SDPTransform.swift in Sources */,
+				1FE47F733ED5AF875238EF62E2FDEFBC /* SDPUtils.swift in Sources */,
+				1B2704B8B7B927FD9BFAB1C035EDF838 /* SMAppStreamService.swift in Sources */,
+				6DBF1227FB9A732AD4C404C494D4584D /* SMAudioStateTransaction.swift in Sources */,
+				31EF1AF95B6BCFA8345CA00994262EBC /* SMCallerState.swift in Sources */,
+				1DEB9D5F95EC2C78D986059E5157E646 /* SMCallerStateChannel.swift in Sources */,
+				8EB35D30534399D7ED14936B2B0BEE56 /* SMCapabilitiesChannel.swift in Sources */,
+				742C73FB40CDD0DA973C96C38A7877E0 /* SMChannel.swift in Sources */,
+				F611609B2088E3DDF3D7DAC03CE576CA /* SMChannelMessage.swift in Sources */,
+				165DE3B3D31558403A32B671EF7DF369 /* SMChannelsManager.swift in Sources */,
+				6060ADBF39477D7A71712C045C3F42F8 /* SMChatChannel.swift in Sources */,
+				6CAB04CFA32E8B8E11910DE08A6A9476 /* SMConfidentialRect.swift in Sources */,
+				F0F3AE4BD96B55FFD60E923DD3A69296 /* SMConfidentialView.swift in Sources */,
+				E1A005D105DEF2F47137520EB71F0BAF /* SMConfidentialWebView.swift in Sources */,
+				C7749BECB690731C8D8C5FF2EFB2AF95 /* SMConnectRequest.swift in Sources */,
+				3D92FC3327B3FEDFA727FAE630C7DE77 /* SMConnectResponse.swift in Sources */,
+				17CC07E03C2F2D3F849E8B0033B181A8 /* SMConnectTransportPayload.swift in Sources */,
+				110623A48BC820EF2C4995A40BCE0B2E /* SMDisconnectTransaction.swift in Sources */,
+				E516CB93649C6DD3712FAA74B8CC39DA /* SMDiscoveryRequest.swift in Sources */,
+				9BEE3472227BDF0EFBE60C1AD3467BE4 /* SMDiscoveryResponse.swift in Sources */,
+				12A23513BF6AD4D8089178092566EE78 /* SMDiscoverySessionByPinRequest.swift in Sources */,
+				08737EDE148196BE39A2BFEFE1F60F6E /* SMDiscoverySessionByPinResponse.swift in Sources */,
+				3221659A9E488C7B3764537AB639733A /* SMEncodingsBuilder.swift in Sources */,
+				5A2807B6358F3B2FA8F6190A9BECA101 /* SMEntitlementModel.swift in Sources */,
+				796AD752DEE88EE6F5505DFEFF93CF29 /* SMEntitlementsChannel.swift in Sources */,
+				BCDCCEFC29A550BAE8C711BE4A0B57D5 /* SMEntitlementType.swift in Sources */,
+				01AF8E59C2AD1D06F26E24D512A84F0A /* SMError.swift in Sources */,
+				0F1B50A3E598A1B0E2E9E80AB3578265 /* SMFrameProcessor.swift in Sources */,
+				9C85B4B309B4285F408B4EAF7B977A3C /* SMGetChallengeRequest.swift in Sources */,
+				61AB1DE6489CB11B27285A16966C8B4C /* SMGetChallengeResponse.swift in Sources */,
+				FE62117FFEA502D80583FBB548A25EDD /* SMHandshakeOptions.swift in Sources */,
+				2A306534B8D81FEC4F1DD5AEB246D231 /* SMHandshakeTransaction.swift in Sources */,
+				CA53D48346E3528FBAD1B7A3897B6860 /* SMIceCandidate.swift in Sources */,
+				EBBFE4CD01881E87625547DA1B7E0EA2 /* SMIdentityInfo.swift in Sources */,
+				EBAC8D5CEB6680F0ABE68401AD843CFA /* SMInitializationPayload.swift in Sources */,
+				A7F09BA7F74F5E4CE8AC9E648365A1F3 /* SMLaserPointerChannel.swift in Sources */,
+				8EBFA11A0CA94B63E569EB1DB9B0E546 /* SMLaserPointerModel.swift in Sources */,
+				33FEA72BE865B666F02888A4704DD62B /* SMLaserPointerService.swift in Sources */,
+				F011840F6952ADAFC190C8BB160B5CA7 /* SMLogCapturerChangeTransaction.swift in Sources */,
+				9707AB0C572704D9F1753E6D8EBE769D /* SMLogEvent.swift in Sources */,
+				201329C378C19C23305933FCE298A9B7 /* SMLogger.swift in Sources */,
+				340934BCD8EE3EF023CA3DE4016AA141 /* SMLogRoomCodeUsageTransaction.swift in Sources */,
+				22010F56143B8F16462BE9BFDA102190 /* SMMediasoupChannel.swift in Sources */,
+				3AED71D476DDC4BCE306A05C8462189F /* SMNewTrackAvailableMessage.swift in Sources */,
+				EB71459962583712C6007F2219B8330B /* SMParticipant.swift in Sources */,
+				FC1E33815E0A62AEB87ED7BDCE23AF24 /* SMParticipantsChannel.swift in Sources */,
+				3A8ED8398D9AF12E8706D90602D7D9C8 /* SMRemoteControlChannel.swift in Sources */,
+				64A2F1A93D42C38F1403E1014961A435 /* SMRemoteControlEvent.swift in Sources */,
+				37887B0CD856E047CB7582DB7DD243CA /* SMRemoteControlKeyboardEvent.swift in Sources */,
+				10BCF98CBDF43EDBE7DA4A2313C9A682 /* SMRemoteControlMouseEvent.swift in Sources */,
+				FF0455A0045FA187F50B9AAC3298A4B6 /* SMRemoteControlService.swift in Sources */,
+				24994AD2FC08F0E72381A5781F693929 /* SMRequest.swift in Sources */,
+				5E7E95E8FF4F3CA6D3E000689543A053 /* SMRequestHTTPService.swift in Sources */,
+				D69DA3FA46A159C88F58A5C23DB4C5EA /* SMRequestModel.swift in Sources */,
+				02A821C15C6465FF2D30BF97D35331B9 /* SMRequestsChannel.swift in Sources */,
+				1EA07C084AB31369EB8F128049C33DE0 /* SMRequestService.swift in Sources */,
+				C580C699AF27FB89C5A48495CED10A2B /* SMResolveChallengeRequest.swift in Sources */,
+				56B5924F3E180D2F6112D39B148B6C73 /* SMResponse.swift in Sources */,
+				D85C63B4FD90C8052C99861266DF142B /* SMRestClient.swift in Sources */,
+				B97FD5E825A14F744084B1440BD05BED /* SMResumeTrackPayload.swift in Sources */,
+				EEF49D3B3FB734A738DED517AC340D89 /* SMRtcChannel.swift in Sources */,
+				DE45E7E2274BDD1AF8C0A197D510F503 /* SMSendTrackPayload.swift in Sources */,
+				21ED30EC27C223908369576AB26F9A61 /* SMSendTrackSocketReponse.swift in Sources */,
+				2A3B69F008E6FF53EEF63FB7721AEAF9 /* SMSession.swift in Sources */,
+				EAC1F47B2C3C31E6F84E37BB13057A2B /* SMSocketDataParser.swift in Sources */,
+				64FF3EC977C02564079DF31149AA54DD /* SMStartWebRTCTransaction.swift in Sources */,
+				96FEABAD66F921160DF9DE48139995E9 /* SMStringifier.swift in Sources */,
+				D42B6FC9A4C410C27CCE21F6B09368FA /* SMTextMessage.swift in Sources */,
+				9E063F3FCC93CE12088D668B10BF3014 /* SMTracksManager.swift in Sources */,
+				CC58F3553E4D578EBC1B5855B77A0D70 /* SMTransaction.swift in Sources */,
+				2130D0686FDA05E1FD230DA5077528AF /* SMTransport.swift in Sources */,
+				CFEA2E2F326B6B068BBC67BABF25814A /* SMTransportOptions.swift in Sources */,
+				F5B85407EAF118A4B439F4B9770EC146 /* SMTurnConfiguration.swift in Sources */,
+				485965463E06272A63A2DDD0477224D0 /* SMVideoStateTransaction.swift in Sources */,
+				DFDF139D90B9FBBC48E0FE7076A67D21 /* SMWebSocketClient.swift in Sources */,
+				730A7696A5F6048E3DC1C851352FB0F8 /* StringExtension.swift in Sources */,
+				2109F85103D410CAF6B0F89AA6DA2819 /* UIView+TopmostView.swift in Sources */,
+				28338FF928DE0317C3447273A04A259F /* VideoCapturerFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32814B84AFFA316ECCA714A9C9D1AD66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4BAC4EF55184685FDCBE914CEE821B /* Compression.swift in Sources */,
+				FD4C5EC584AAC8E6F8ECBD7881AF140D /* SSLClientCertificate.swift in Sources */,
+				94603370C7EA9F2BA99B45A5942934E3 /* SSLSecurity.swift in Sources */,
+				661188816A878E5BE7E373D89CAB5DB9 /* Starscream-dummy.m in Sources */,
+				E117F9F544FEF2ACB5CD15198D735067 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4EB1867436BDFB8AE5882B71A2B5A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E73E31DA63E1C618F3C2149B74B2F4B /* Pods-ScreenMeetTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7590AA21A9C86CC878876A522CE7AC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD1CCD311637FFC0136E38CAB884436 /* Pods-ScreenMeet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EC8A2B70FDF900C4820EC6F4F95CAEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScreenMeetSDK;
+			target = 7C33772663A449206C0FBFC99FF21C7B /* ScreenMeetSDK */;
+			targetProxy = C44F22A1D03ECD2EB9EC62634AC4216E /* PBXContainerItemProxy */;
+		};
+		2550B1ABD127F996AE5DD31DAF007775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScreenMeetSDK;
+			target = 7C33772663A449206C0FBFC99FF21C7B /* ScreenMeetSDK */;
+			targetProxy = DF93848E663C40AEC80510B19DCEBCBB /* PBXContainerItemProxy */;
+		};
+		318F0F6AB95F85A114D30E321A6CC05F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 68B1EBD5EE37E80CF7DF41731786A0A1 /* PBXContainerItemProxy */;
+		};
+		4F982B41C15AEF6C09E0A835B33D83A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = D9ABBDA6397274F988972DB066469598 /* PBXContainerItemProxy */;
+		};
+		6659C56A1128D525519AFD8A6396869D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Socket.IO-Client-Swift";
+			target = A44D85440C5D58BC5C4D70A539C5EEF0 /* Socket.IO-Client-Swift */;
+			targetProxy = 554ADECB9B3F6F86A4A3481A828A233E /* PBXContainerItemProxy */;
+		};
+		7FE83B5D464A0CB3B101864503A5B7DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Socket.IO-Client-Swift";
+			target = A44D85440C5D58BC5C4D70A539C5EEF0 /* Socket.IO-Client-Swift */;
+			targetProxy = 89AEC084FF77CECAEB6CA05597204AD6 /* PBXContainerItemProxy */;
+		};
+		802840F8C160A18A548D109056DD9C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 96D4EF7A9750E81A4775DE5F56CC8053 /* PBXContainerItemProxy */;
+		};
+		8190CEC02BC60183188AE08C7674D9A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleWebRTC;
+			target = EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */;
+			targetProxy = 8136862A2EE7313F06F66480882C2A63 /* PBXContainerItemProxy */;
+		};
+		9D8FBFFB9A2A4F58F9E1F8BD90D58086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Socket.IO-Client-Swift";
+			target = A44D85440C5D58BC5C4D70A539C5EEF0 /* Socket.IO-Client-Swift */;
+			targetProxy = 0E1D0F00E91A56CC9A91AE1AD8A96624 /* PBXContainerItemProxy */;
+		};
+		D78BC60FFC5E87F92083DDBDA00F4E30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleWebRTC;
+			target = EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */;
+			targetProxy = 082AA70F04630FBF4B16C238D79FD3E6 /* PBXContainerItemProxy */;
+		};
+		EA769B5F8A5301D02ADDCE8CFCAB9439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleWebRTC;
+			target = EC23BFCFC44D9224C054485B54824B8E /* GoogleWebRTC */;
+			targetProxy = B51591112D93A87325FC5A84FDF8437D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BE38BA783803C99087BE9A7A1EBB1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F228AE386A5B7685184E421E31571E8A /* Pods-ScreenMeet.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScreenMeet/Pods-ScreenMeet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScreenMeet/Pods-ScreenMeet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		17CCECBD1A9105930DCE61A471C2760B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D526636407B4A5DAD8A9AD55ED8BC2C /* ScreenMeetSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/ScreenMeetSDK/ScreenMeetSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScreenMeetSDK/ScreenMeetSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScreenMeetSDK/ScreenMeetSDK.modulemap";
+				PRODUCT_MODULE_NAME = ScreenMeetSDK;
+				PRODUCT_NAME = ScreenMeetSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		41336CC523573D5DF9229F36B583D59C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F0ECECC384C61CEB14246E49E0224D /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45E6E04CE5A0F8270DA03DD249D67536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E173E6CA872CD3B7759EAFF48A029E56 /* Socket.IO-Client-Swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift.modulemap";
+				PRODUCT_MODULE_NAME = SocketIO;
+				PRODUCT_NAME = SocketIO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F16F5FBEFFA23E392EADFBB5E1EAC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4717810A56FD73456B99982179A887EC /* Socket.IO-Client-Swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift.modulemap";
+				PRODUCT_MODULE_NAME = SocketIO;
+				PRODUCT_NAME = SocketIO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69AFA13D8F5DF90D306804E27B825489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B3AAA08F8515756F2151DFFD04E2A3 /* ScreenMeetSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/ScreenMeetSDK/ScreenMeetSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScreenMeetSDK/ScreenMeetSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScreenMeetSDK/ScreenMeetSDK.modulemap";
+				PRODUCT_MODULE_NAME = ScreenMeetSDK;
+				PRODUCT_NAME = ScreenMeetSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AB11C6FF61DD3A44C2F99D55B212AA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7144F56BC0FFE93FF148DE636F68A1A /* GoogleWebRTC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA4823312B2E1F4FF89BEBA667FC5394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5087CE096E2EC1C116B2BC7802CD3D9E /* Pods-ScreenMeet.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScreenMeet/Pods-ScreenMeet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScreenMeet/Pods-ScreenMeet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0FCBC0365F7E312566C36A1C0048A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3AA7DF59AD49AFFFE1546CCCEEE94A6 /* Pods-ScreenMeetTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScreenMeetTests/Pods-ScreenMeetTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScreenMeetTests/Pods-ScreenMeetTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3A814EFE34B7B33A4CA28C3796D786C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDE81C1AFFBAAEC14884EEF22ECB3B5 /* Starscream.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB5E1603D60245D4FBFEB08D5DF28FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB81007A995F191C293EE003ED7586F /* Pods-ScreenMeetTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScreenMeetTests/Pods-ScreenMeetTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScreenMeetTests/Pods-ScreenMeetTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF86AC2AE673969AA233A392DCDE2C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D778740F36B156F5F5A8439174DDF3 /* GoogleWebRTC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B664D4DBF22B3F6B271154516833C2 /* Build configuration list for PBXAggregateTarget "GoogleWebRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF86AC2AE673969AA233A392DCDE2C2D /* Debug */,
+				AB11C6FF61DD3A44C2F99D55B212AA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B9769A648B9A11DB1A5C41B1BAF9E10 /* Build configuration list for PBXNativeTarget "ScreenMeetSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69AFA13D8F5DF90D306804E27B825489 /* Debug */,
+				17CCECBD1A9105930DCE61A471C2760B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE3EACAA502967075F54619E9EA388C9 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41336CC523573D5DF9229F36B583D59C /* Debug */,
+				D3A814EFE34B7B33A4CA28C3796D786C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9CDAD17FA7BA1F46F243CEDB5E33B6A /* Build configuration list for PBXNativeTarget "Pods-ScreenMeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE38BA783803C99087BE9A7A1EBB1E7 /* Debug */,
+				BA4823312B2E1F4FF89BEBA667FC5394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F462B2568973ADC2830479182F5D85C3 /* Build configuration list for PBXNativeTarget "Socket.IO-Client-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F16F5FBEFFA23E392EADFBB5E1EAC55 /* Debug */,
+				45E6E04CE5A0F8270DA03DD249D67536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA853CC38153B717527C0AF9487EEFAC /* Build configuration list for PBXNativeTarget "Pods-ScreenMeetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5E1603D60245D4FBFEB08D5DF28FCC /* Debug */,
+				C0FCBC0365F7E312566C36A1C0048A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

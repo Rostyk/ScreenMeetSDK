@@ -1,0 +1,31 @@
+PODS:
+  - GoogleWebRTC (1.1.31999)
+  - ScreenMeetSDK (2.0.5):
+    - GoogleWebRTC
+    - Socket.IO-Client-Swift (~> 15.2.0)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+
+DEPENDENCIES:
+  - ScreenMeetSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GoogleWebRTC
+    - Socket.IO-Client-Swift
+    - Starscream
+
+EXTERNAL SOURCES:
+  ScreenMeetSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
+  ScreenMeetSDK: cbe081937c88ae7c4a6d36b18c72e2570ec65b3f
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+
+PODFILE CHECKSUM: b7720503d45310d6b74cdcababb9fb79f2c15b9a
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,6 @@
+framework module ScreenMeetSDK {
+  umbrella header "ScreenMeetSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
