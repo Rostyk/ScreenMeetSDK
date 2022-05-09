@@ -2,7 +2,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ScreenMeetSDK'
+  s.name             = 'ScreenMeetSDKVision'
   s.version          = '2.0.10'
   s.summary          = 'ScreenMeetSDK enables ScreenMeet\'s realtime platform in your app.'
 
@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
   ScreenMeet provides a platform that allows you to build realtime solutions for your application.
                        DESC
 
-  s.homepage         = 'https://github.com/screenmeet/screenmeet-live-sdk-ios'
+  s.homepage         = 'https://github.com/Rostyk/ScreenMeetSDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ScreenMeet' => 'sdksupport@screenmeet.com' }
-  s.source           = { :git => 'https://github.com/screenmeet/screenmeet-live-sdk-ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Rostyk/ScreenMeetSDK.git', :tag => s.version.to_s }
   
   s.swift_version = '5.0'
   s.ios.deployment_target = '12.0'
