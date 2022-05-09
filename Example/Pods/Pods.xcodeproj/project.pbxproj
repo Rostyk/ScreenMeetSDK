@@ -383,7 +383,7 @@
 		BE3A3EBE05C8D8CCA72AABC6C542B758 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
 		BE64D8FA0C2F9E7D0592925E01BF833D /* MSProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSProducer.swift; sourceTree = "<group>"; };
 		C153D232AF98BEE2AC657949D970B21A /* SDPGrammar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SDPGrammar.swift; sourceTree = "<group>"; };
-		C165635B4563613A966E9A03FA27A0EA /* ScreenMeetSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ScreenMeetSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C165635B4563613A966E9A03FA27A0EA /* ScreenMeetSDKVision.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ScreenMeetSDKVision.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C2CB5F4DBB0365231898A85645D5A36B /* SMCapabilitiesChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMCapabilitiesChannel.swift; sourceTree = "<group>"; };
 		C42498CD75F39675697E86114432B150 /* SocketManagerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketManagerSpec.swift; path = Source/SocketIO/Manager/SocketManagerSpec.swift; sourceTree = "<group>"; };
 		C6A974710D10D0A963C4AE64AB75AF7A /* SMHandshakeTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMHandshakeTransaction.swift; sourceTree = "<group>"; };
@@ -752,7 +752,7 @@
 			children = (
 				16694BC93E991F26B0898D13E547F4DD /* LICENSE */,
 				7203E4C5F3FDFC3D478024051931A5BA /* README.md */,
-				C165635B4563613A966E9A03FA27A0EA /* ScreenMeetSDK.podspec */,
+				C165635B4563613A966E9A03FA27A0EA /* ScreenMeetSDKVision.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
