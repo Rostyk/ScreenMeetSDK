@@ -30,8 +30,8 @@
             filePath = "../ScreenMeetSDK/Classes/Transport/Channels/SMMediasoupChannel/SMMediasoupChannel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "758"
-            endingLineNumber = "758"
+            startingLineNumber = "800"
+            endingLineNumber = "800"
             landmarkName = "queueConsumerOperation()"
             landmarkType = "7">
          </BreakpointContent>

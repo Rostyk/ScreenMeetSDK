@@ -67,6 +67,11 @@ public class ScreenMeet: NSObject {
     public static func shareScreen() {
         session.startScreenSharing()
     }
+    
+    /// Start screen sharing with providing raw images of screen
+    public static func shareScreenWithImageTransfer(_ completion:  @escaping ((SMImageHandler?) -> Void)) {
+        session.startScreenSharingImageTransfer(completion)
+    }
 
     /// Stop video sharing
     public static func stopVideoSharing() {

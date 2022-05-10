@@ -44,6 +44,10 @@ struct ChangeCapturerOperation: ProduceOperation {
     var completion: SMCapturerOperationCompletion?
 }
 
+struct StopCapturerOperation: ProduceOperation {
+    var completion: SMCapturerOperationCompletion?
+}
+
 class SMMediasoupChannel: NSObject, SMChannel  {
     private var mediasoupTransportOptions: SMTransportOptions!
     private var tracksManager = SMTracksManager()
@@ -496,12 +500,29 @@ class SMMediasoupChannel: NSObject, SMChannel  {
         }
     }
     
+    func stopCapturer(completionHandler: SMCapturerOperationCompletion? = nil) {
+        /* if there's a pending change capturer operation - do nothing. Just wait till it completes*/
+        if let _ = produceOperations.first(where: { operation -> Bool in operation as? StopCapturerOperation != nil }) {
+            return
+        }
+        
+        let stopCapturerOperation = StopCapturerOperation(completion: completionHandler)
+        produceOperations.append(stopCapturerOperation)
+        if currentProducerOperation == nil {
+            queueProducerOperation()
+        }
+    }
+    
     func setVideoSourceDevice(_ device: AVCaptureDevice?) {
         tracksManager.videoSourceDevice = device
     }
     
     func getVideoSourceDevice() -> AVCaptureDevice? {
         return tracksManager.videoSourceDevice
+    }
+    
+    func createImageTransferHandler() -> SMImageHandler {
+        return tracksManager.createImageTransferHandler()
     }
     
     func disconnect(_ completion: (() -> ())? = nil) {
@@ -589,28 +610,44 @@ class SMMediasoupChannel: NSObject, SMChannel  {
     }
     
     private func changeCapturerInternal(_ videoSourceDevice: AVCaptureDevice!, completionHandler: SMCapturerOperationCompletion? = nil) {
-            self.tracksManager.videoSourceDevice = videoSourceDevice
-            
-            if (getVideoEnabled() == false) {
-                completionHandler?(SMError(code: .capturerInternalError, message: "Local video is currently stopped. Could not change capturer"))
-            }
-            else {
-                tracksManager.changeCapturer(videoSourceDevice) { [weak self] capturerError in
-                    if let capturerError = capturerError {
-                        completionHandler?(capturerError)
-                        
-                        // capturer failed, should stop video track
-                        self?.setVideoState(false) { error, videoTrack in
-                            ScreenMeet.session.delegate?.onLocalVideoStopped()
-                            ScreenMeet.session.delegate?.onError(capturerError)
-                        }
+        self.tracksManager.videoSourceDevice = videoSourceDevice
+        
+        if (getVideoEnabled() == false) {
+            completionHandler?(SMError(code: .capturerInternalError, message: "Local video is currently stopped. Could not change capturer"))
+        }
+        else {
+            tracksManager.changeCapturer(videoSourceDevice) { [weak self] capturerError in
+                if let capturerError = capturerError {
+                    completionHandler?(capturerError)
+                    
+                    // capturer failed, should stop video track
+                    self?.setVideoState(false) { error, videoTrack in
+                        ScreenMeet.session.delegate?.onLocalVideoStopped()
+                        ScreenMeet.session.delegate?.onError(capturerError)
                     }
-                    else {
-                        completionHandler?(nil)
-                    }
+                }
+                else {
+                    completionHandler?(nil)
                 }
             }
         }
+    }
+    
+    private func stopCapturerInternal(completionHandler: SMCapturerOperationCompletion? = nil) {
+        if (getVideoEnabled() == false) {
+            completionHandler?(SMError(code: .capturerInternalError, message: "Local video is currently stopped. Could not change capturer"))
+        }
+        else {
+            tracksManager.stopCapturer { capturerError in
+                if let capturerError = capturerError {
+                    completionHandler?(capturerError)
+                }
+                else {
+                    completionHandler?(nil)
+                }
+            }
+        }
+    }
     
     private func setAudioStateInternal(_ isEnabled: Bool,  _ completion: @escaping SMAudioOperationCompletion) {
         if isEnabled {
@@ -688,14 +725,19 @@ class SMMediasoupChannel: NSObject, SMChannel  {
                 }
             }
             
-            NSLog("changeCapturerInternal starting")
             if let changeCapturerOperation = currentProducerOperation as? ChangeCapturerOperation {
                 changeCapturerInternal(changeCapturerOperation.device) { [weak self] error in
                     self?.proceedWithNextProduceOperation()
-                    NSLog("changeCapturerInternal completed")
                     
                     SMLogCapturerChangeTransaction().witDevice(changeCapturerOperation.device).run()
                     changeCapturerOperation.completion?(error)
+                }
+            }
+            
+            if let stopCapturerOperation = currentProducerOperation as? StopCapturerOperation {
+                stopCapturerInternal() { [weak self] error in
+                    self?.proceedWithNextProduceOperation()
+                    stopCapturerOperation.completion?(error)
                 }
             }
         }

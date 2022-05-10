@@ -160,6 +160,11 @@ class SMSession: NSObject {
         }
     }
     
+    private func createImageTransferHandler() -> SMImageHandler {
+        let msChannel = SMChannelsManager.shared.channel(for: .mediasoup) as! SMMediasoupChannel
+        return msChannel.createImageTransferHandler()
+    }
+    
     func getVideoEnabled() -> Bool {
         let channel = SMChannelsManager.shared.channel(for: .mediasoup) as! SMMediasoupChannel
         return channel.getVideoEnabled()
@@ -308,6 +313,43 @@ extension SMSession {
                     self?.delegate?.onError(error)
                 }
                 else {
+                    DispatchQueue.main.async {
+                        self?.delegate?.onLocalVideoCreated(videoTrack!)
+                    }
+                }
+            }
+        }
+    }
+    
+    func startScreenSharingImageTransfer(_ completion: @escaping ((SMImageHandler?) -> Void)) {
+        let msChannel = SMChannelsManager.shared.channel(for: .mediasoup) as! SMMediasoupChannel
+        let audioVideoState = getAVState()
+        
+        /*If the video is running and it's not a screen, stop source*/
+        if (audioVideoState.isVideoActive && audioVideoState.videoState != .SCREEN) {
+            msChannel.stopCapturer() { [weak self] error in
+                if let error = error {
+                    self?.delegate?.onError(error)
+                    completion(nil)
+                }
+                else  {
+                    DispatchQueue.main.async {
+                        self?.delegate?.onLocalVideoSourceChanged()
+                    }
+                    completion(msChannel.createImageTransferHandler())
+                }
+            }
+        }
+        /*The video is stopped - create video track*/
+        else if (!audioVideoState.isVideoActive) {
+            let imageHandler = msChannel.createImageTransferHandler()
+            msChannel.setVideoState(true) { [weak self] error, videoTrack in
+                if let error = error {
+                    completion(nil)
+                    self?.delegate?.onError(error)
+                }
+                else {
+                    completion(imageHandler)
                     DispatchQueue.main.async {
                         self?.delegate?.onLocalVideoCreated(videoTrack!)
                     }

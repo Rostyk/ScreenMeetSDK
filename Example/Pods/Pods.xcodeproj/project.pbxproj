@@ -100,6 +100,8 @@
 		8EB35D30534399D7ED14936B2B0BEE56 /* SMCapabilitiesChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB5F4DBB0365231898A85645D5A36B /* SMCapabilitiesChannel.swift */; };
 		8EBFA11A0CA94B63E569EB1DB9B0E546 /* SMLaserPointerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8ACCE516F860D65CBFA75C5C51AF1 /* SMLaserPointerModel.swift */; };
 		8FD8B8450A9BAC6BC91FF520447BBC95 /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DB2A55E6E957D840A19B3839874AB /* SocketExtensions.swift */; };
+		917BF7E12829BD7D00E8C8D0 /* SMImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917BF7E02829BD7D00E8C8D0 /* SMImageHandler.swift */; };
+		917BF7E32829DC4400E8C8D0 /* FakeCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917BF7E22829DC4400E8C8D0 /* FakeCapturer.swift */; };
 		94603370C7EA9F2BA99B45A5942934E3 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C18B6D338D5EB9ABCADD36BC68B0B4 /* SSLSecurity.swift */; };
 		96FEABAD66F921160DF9DE48139995E9 /* SMStringifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048415984E96677A486A3CFA827582BC /* SMStringifier.swift */; };
 		9707AB0C572704D9F1753E6D8EBE769D /* SMLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF95DB2D403491CEC086F94A458D4FB3 /* SMLogEvent.swift */; };
@@ -352,6 +354,8 @@
 		8E955BA57C2CFCA2FFDC8D82F098929A /* Pods-ScreenMeet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreenMeet-umbrella.h"; sourceTree = "<group>"; };
 		8F1CBFB1E70ECA04153E3898C8E7D991 /* SMConfidentialRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMConfidentialRect.swift; sourceTree = "<group>"; };
 		8F316045EABFD47C41CA6F37FB65FF2C /* SMVideoStateTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMVideoStateTransaction.swift; sourceTree = "<group>"; };
+		917BF7E02829BD7D00E8C8D0 /* SMImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMImageHandler.swift; sourceTree = "<group>"; };
+		917BF7E22829DC4400E8C8D0 /* FakeCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeCapturer.swift; sourceTree = "<group>"; };
 		9241EF4C928D2495B5C794E9684E84B8 /* Socket.IO-Client-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Socket.IO-Client-Swift-Info.plist"; sourceTree = "<group>"; };
 		947CBB3C283EADA211670400A0E63F90 /* MSHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSHandler.swift; sourceTree = "<group>"; };
 		96BA4025D8ED32453BD9542A62BCCD2B /* SMDiscoveryRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SMDiscoveryRequest.swift; sourceTree = "<group>"; };
@@ -509,6 +513,7 @@
 			children = (
 				49A8DC61E02CEC6D368AB2F41CA5B887 /* SMEncodingsBuilder.swift */,
 				9D31DA21D24EF791A65A18F8D0FF0373 /* SMTracksManager.swift */,
+				917BF7E02829BD7D00E8C8D0 /* SMImageHandler.swift */,
 			);
 			path = "Tracks & Encodings";
 			sourceTree = "<group>";
@@ -1001,6 +1006,7 @@
 			isa = PBXGroup;
 			children = (
 				2D0FA4132E5879E6DFD67BADFBB6CC6B /* CameraVideoCapturer.swift */,
+				917BF7E22829DC4400E8C8D0 /* FakeCapturer.swift */,
 				EDA4A0A90BDAB35FF7B8C7CA61620858 /* MSConsumer.swift */,
 				475C73229AFDAE7213E31513E159B602 /* MSDevice.swift */,
 				0349FC198ED95BB21819E84FC06452AE /* MSError.swift */,
@@ -1368,6 +1374,7 @@
 				0F1B50A3E598A1B0E2E9E80AB3578265 /* SMFrameProcessor.swift in Sources */,
 				9C85B4B309B4285F408B4EAF7B977A3C /* SMGetChallengeRequest.swift in Sources */,
 				61AB1DE6489CB11B27285A16966C8B4C /* SMGetChallengeResponse.swift in Sources */,
+				917BF7E32829DC4400E8C8D0 /* FakeCapturer.swift in Sources */,
 				FE62117FFEA502D80583FBB548A25EDD /* SMHandshakeOptions.swift in Sources */,
 				2A306534B8D81FEC4F1DD5AEB246D231 /* SMHandshakeTransaction.swift in Sources */,
 				CA53D48346E3528FBAD1B7A3897B6860 /* SMIceCandidate.swift in Sources */,
@@ -1396,6 +1403,7 @@
 				1EA07C084AB31369EB8F128049C33DE0 /* SMRequestService.swift in Sources */,
 				C580C699AF27FB89C5A48495CED10A2B /* SMResolveChallengeRequest.swift in Sources */,
 				56B5924F3E180D2F6112D39B148B6C73 /* SMResponse.swift in Sources */,
+				917BF7E12829BD7D00E8C8D0 /* SMImageHandler.swift in Sources */,
 				D85C63B4FD90C8052C99861266DF142B /* SMRestClient.swift in Sources */,
 				B97FD5E825A14F744084B1440BD05BED /* SMResumeTrackPayload.swift in Sources */,
 				EEF49D3B3FB734A738DED517AC340D89 /* SMRtcChannel.swift in Sources */,

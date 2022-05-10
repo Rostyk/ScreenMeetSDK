@@ -11,6 +11,8 @@ import WebRTC
 import AVFoundation
 
 class SMMainViewController: UIViewController {
+    private var thread: Thread!
+    private var imageHandler: SMImageHandler?
     
     private var chatVisible = false
     private var chatWidth: CGFloat = 240.0
@@ -401,6 +403,7 @@ extension SMMainViewController: SMControlBarDelegate {
     }
     
     func cameraButtonTapped() {
+        imageHandler = nil
         guard !SMUserInterface.manager.isSimulator else { return }
         
         func toggleVideo() {
@@ -433,15 +436,46 @@ extension SMMainViewController: SMControlBarDelegate {
         }
     }
     
+    
     func screenShareButtonTapped() {
         guard !SMUserInterface.manager.isSimulator else { return }
         
         if SMUserInterface.manager.isScreenShareEnabled {
+            imageHandler = nil
             ScreenMeet.stopVideoSharing()
         } else {
-            ScreenMeet.shareScreen()
-            updateContent(with: SMUserInterface.manager.mainParticipant)
+            ScreenMeet.shareScreenWithImageTransfer({ [unowned self] handler in
+                imageHandler = handler
+                thread = Thread(target: self, selector: #selector(run), object: nil)
+                thread.start()
+                DispatchQueue.main.async { [unowned self] in
+                    updateContent(with: SMUserInterface.manager.mainParticipant)
+                }
+               
+            })
+            
+            
+            
         }
+    }
+    
+    @objc func run() {
+        let image = getImageWithColor(color: .blue)
+        while imageHandler != nil {
+            imageHandler?.transferImage(image)
+            usleep(100000)
+        }
+    }
+    
+    func getImageWithColor(color: UIColor) -> UIImage {
+        let factor: CGFloat = 0.5
+        let rect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width * factor, height: UIScreen.main.bounds.height * factor)
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: UIScreen.main.bounds.size.width * factor, height: UIScreen.main.bounds.size.height *  factor), false, 0)
+        color.setFill()
+        UIRectFill(rect)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return image
     }
     
     func optionButtonTapped() {
