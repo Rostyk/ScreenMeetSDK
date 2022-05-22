@@ -15,4 +15,8 @@ public class SMImageHandler: NSObject {
     public func transferImage(_ image: UIImage) {
         imageHandler(image)
     }
+    
+    public func release() {
+        imageHandler =  nil
+    }
 }

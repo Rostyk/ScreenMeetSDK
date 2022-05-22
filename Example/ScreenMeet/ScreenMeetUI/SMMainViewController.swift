@@ -11,12 +11,13 @@ import WebRTC
 import AVFoundation
 
 class SMMainViewController: UIViewController {
-    private var thread: Thread!
-    private var imageHandler: SMImageHandler?
     
     private var chatVisible = false
     private var chatWidth: CGFloat = 240.0
     private var chatTrailingConstraint: NSLayoutConstraint!
+    private var thread: Thread? = nil
+    private var isRunning = false
+    private var imageHandler: SMImageHandler? = nil
     
     private var chatMessagesView: SMChatMessagesView = {
         let chatMessagesView = SMChatMessagesView()
@@ -32,7 +33,7 @@ class SMMainViewController: UIViewController {
     
     private var testRemoteControlButton: UIButton = {
         let testRemoteControlButton = UIButton()
-        testRemoteControlButton.isEnabled = false
+        testRemoteControlButton.isEnabled = true
         testRemoteControlButton.setBackgroundImage(UIImage(named: "icon-remote-control"), for: .normal)
         testRemoteControlButton.addTarget(self, action:  #selector(demoRemoteControlButtonTapped), for: .touchUpInside)
         testRemoteControlButton.translatesAutoresizingMaskIntoConstraints = false
@@ -302,6 +303,19 @@ class SMMainViewController: UIViewController {
     }
     
     @objc private func demoRemoteControlButtonTapped() {
+        ScreenMeet.shareScreenWithImageTransfer({ handler in
+            self.isRunning = false
+            self.imageHandler?.release()
+            self.imageHandler = nil
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                self.imageHandler = handler
+                self.thread = Thread(target: self, selector: #selector(self.send), object: nil)
+                self.isRunning = true
+                self.thread!.start()
+            })
+            
+        })
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
         let viewController = storyboard.instantiateViewController(withIdentifier: "SMDemoRemoteControlTabbarViewController")
@@ -403,8 +417,8 @@ extension SMMainViewController: SMControlBarDelegate {
     }
     
     func cameraButtonTapped() {
-        imageHandler = nil
         guard !SMUserInterface.manager.isSimulator else { return }
+        isRunning = false
         
         func toggleVideo() {
             if SMUserInterface.manager.isCameraEnabled {
@@ -436,46 +450,52 @@ extension SMMainViewController: SMControlBarDelegate {
         }
     }
     
-    
-    func screenShareButtonTapped() {
-        guard !SMUserInterface.manager.isSimulator else { return }
-        
-        if SMUserInterface.manager.isScreenShareEnabled {
-            imageHandler = nil
-            ScreenMeet.stopVideoSharing()
-        } else {
-            ScreenMeet.shareScreenWithImageTransfer({ [unowned self] handler in
-                imageHandler = handler
-                thread = Thread(target: self, selector: #selector(run), object: nil)
-                thread.start()
-                DispatchQueue.main.async { [unowned self] in
-                    updateContent(with: SMUserInterface.manager.mainParticipant)
-                }
-               
-            })
-            
-            
-            
-        }
-    }
-    
-    @objc func run() {
-        let image = getImageWithColor(color: .blue)
-        while imageHandler != nil {
-            imageHandler?.transferImage(image)
-            usleep(100000)
-        }
-    }
-    
-    func getImageWithColor(color: UIColor) -> UIImage {
-        let factor: CGFloat = 0.5
-        let rect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width * factor, height: UIScreen.main.bounds.height * factor)
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: UIScreen.main.bounds.size.width * factor, height: UIScreen.main.bounds.size.height *  factor), false, 0)
+    func maskWithColor(color: UIColor) -> UIImage {
+        let rect = CGRect(x:0, y:0, width:UIScreen.main.bounds.width, height:UIScreen.main.bounds.height)
+        UIGraphicsBeginImageContextWithOptions(UIScreen.main.bounds.size, false, 0)
         color.setFill()
         UIRectFill(rect)
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return image
+    }
+    
+    func screenShareButtonTapped() {
+        guard !SMUserInterface.manager.isSimulator else { return }
+        
+        if SMUserInterface.manager.isScreenShareEnabled {
+            isRunning = false
+            ScreenMeet.stopVideoSharing()
+        } else {
+            ScreenMeet.shareScreenWithImageTransfer({ [self] handler in
+                self.isRunning = false
+                self.imageHandler?.release()
+                self.imageHandler = nil
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                    self.imageHandler = handler
+                    self.thread = Thread(target: self, selector: #selector(self.send), object: nil)
+                    self.isRunning = true
+                    self.thread!.start()
+                })
+   
+            })
+            updateContent(with: SMUserInterface.manager.mainParticipant)
+        }
+    }
+         
+    func random() -> CGFloat {
+            return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+    
+    @objc func send() {
+        while isRunning {
+            //let blueImage = maskWithColor(color: UIColor(red: random(), green: random(), blue: random(), alpha: 1.0))
+            let blueImage = UIImage(named: "icon-test")!
+            imageHandler?.transferImage(blueImage)
+            usleep(500000)
+        }
+        
     }
     
     func optionButtonTapped() {
@@ -563,6 +583,10 @@ extension SMMainViewController {
 
 extension SMMainViewController: SMChatBubbleProtocol {
     func onClicked() {
+        isRunning = false
+        
+        ScreenMeet.shareScreen()
+        updateContent(with: SMUserInterface.manager.mainParticipant)
         toggleChatView()
     }
 }

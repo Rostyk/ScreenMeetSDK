@@ -241,7 +241,7 @@ extension SMUserInterface {
         DispatchQueue.main.async { [unowned self] in
             guard let rootVC = self.rootController() else { return }
             
-            if rootVC.presentedViewController != self.smMainVC {
+            if rootVC.presentedViewController == nil {
                 rootVC.definesPresentationContext = true
                 let navigationViewController = UINavigationController(rootViewController: self.smMainVC)
                 rootVC.present(navigationViewController, animated: true, completion: completion)

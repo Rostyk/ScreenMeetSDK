@@ -1122,7 +1122,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = U3AQW9824Q;
+				DEVELOPMENT_TEAM = 74Y8Q8R683;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator14.4]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1134,7 +1134,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.0.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.projector.screenmeet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocado.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ScreenMeet/ScreenMeet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1153,7 +1153,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = U3AQW9824Q;
+				DEVELOPMENT_TEAM = 74Y8Q8R683;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator14.4]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1166,7 +1166,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.0.10;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.projector.screenmeet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avocado.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ScreenMeet/ScreenMeet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

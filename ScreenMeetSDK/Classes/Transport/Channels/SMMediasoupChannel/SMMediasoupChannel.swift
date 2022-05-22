@@ -41,6 +41,7 @@ struct VideoOperation: ProduceOperation {
 
 struct ChangeCapturerOperation: ProduceOperation {
     var device: AVCaptureDevice?
+    var isImageTransfer: Bool
     var completion: SMCapturerOperationCompletion?
 }
 
@@ -487,13 +488,13 @@ class SMMediasoupChannel: NSObject, SMChannel  {
         }
     }
     
-    func changeCapturer(_ videoSourceDevice: AVCaptureDevice!, completionHandler: SMCapturerOperationCompletion? = nil) {
+    func changeCapturer(_ videoSourceDevice: AVCaptureDevice!, _ isImageTransfer: Bool, completionHandler: SMCapturerOperationCompletion? = nil) {
         /* if there's a pending change capturer operation - do nothing. Just wait till it completes*/
         if let _ = produceOperations.first(where: { operation -> Bool in operation as? ChangeCapturerOperation != nil }) {
             return
         }
         
-        let changeCapturerOperation = ChangeCapturerOperation(device: videoSourceDevice, completion: completionHandler)
+        let changeCapturerOperation = ChangeCapturerOperation(device: videoSourceDevice, isImageTransfer: isImageTransfer, completion: completionHandler)
         produceOperations.append(changeCapturerOperation)
         if currentProducerOperation == nil {
             queueProducerOperation()
@@ -515,10 +516,19 @@ class SMMediasoupChannel: NSObject, SMChannel  {
     
     func setVideoSourceDevice(_ device: AVCaptureDevice?) {
         tracksManager.videoSourceDevice = device
+        tracksManager.shouldUseCustomImageSessionForVideoSharing = false
     }
     
     func getVideoSourceDevice() -> AVCaptureDevice? {
         return tracksManager.videoSourceDevice
+    }
+    
+    func customImageTransferSessionOn() -> Bool {
+        return tracksManager.shouldUseCustomImageSessionForVideoSharing
+    }
+    
+    func stopImageTransferSessionIfNeeded() {
+        tracksManager.shouldUseCustomImageSessionForVideoSharing = false
     }
     
     func createImageTransferHandler() -> SMImageHandler {
@@ -529,7 +539,6 @@ class SMMediasoupChannel: NSObject, SMChannel  {
         tracksManager.cleanupAudio()
         tracksManager.cleanupVideo()
         transport.webSocketClient.command(for: .mediasoup, message: "video-stopped", data: [String: Any]()) {_ in
-            NSLog("[MS] video-stopped sent")
             completion?()
         }
         
@@ -609,14 +618,16 @@ class SMMediasoupChannel: NSObject, SMChannel  {
         }
     }
     
-    private func changeCapturerInternal(_ videoSourceDevice: AVCaptureDevice!, completionHandler: SMCapturerOperationCompletion? = nil) {
+    private func changeCapturerInternal(_ videoSourceDevice: AVCaptureDevice!, _ isImageTransfer: Bool, completionHandler: SMCapturerOperationCompletion? = nil) {
         self.tracksManager.videoSourceDevice = videoSourceDevice
         
         if (getVideoEnabled() == false) {
-            completionHandler?(SMError(code: .capturerInternalError, message: "Local video is currently stopped. Could not change capturer"))
+            DispatchQueue.main.async {
+                completionHandler?(SMError(code: .capturerInternalError, message: "Local video is currently stopped. Could not change capturer"))
+            }
         }
         else {
-            tracksManager.changeCapturer(videoSourceDevice) { [weak self] capturerError in
+            tracksManager.changeCapturer(videoSourceDevice, isImageTransfer) { [weak self] capturerError in
                 if let capturerError = capturerError {
                     completionHandler?(capturerError)
                     
@@ -680,6 +691,7 @@ class SMMediasoupChannel: NSObject, SMChannel  {
             addVideoTrack(completion)
         }
         else {
+            tracksManager.shouldUseCustomImageSessionForVideoSharing = false
             if let producer = producers["video"] {
                 producer.close()
                 producers["video"] = nil
@@ -726,7 +738,7 @@ class SMMediasoupChannel: NSObject, SMChannel  {
             }
             
             if let changeCapturerOperation = currentProducerOperation as? ChangeCapturerOperation {
-                changeCapturerInternal(changeCapturerOperation.device) { [weak self] error in
+                changeCapturerInternal(changeCapturerOperation.device, changeCapturerOperation.isImageTransfer) { [weak self] error in
                     self?.proceedWithNextProduceOperation()
                     
                     SMLogCapturerChangeTransaction().witDevice(changeCapturerOperation.device).run()
@@ -929,13 +941,15 @@ extension SMMediasoupChannel: MSSendTransportConnectDelegate {
         
         if transport is MSSendTransport {
             if connectionState == .failed || connectionState == .disconnected {
-                reconnectSendTransport()
+                NSLog("SMMediasoupChannel.reconnectSendTransport()")
+                //reconnectSendTransport()
             }
             NSLog("[MS] send transport connection state: " + (stringState ?? "unknown"))
         }
         else {
             if connectionState == .failed || connectionState == .disconnected {
-                reconnectRecvTransport()
+                NSLog("SMMediasoupChannel.reconnectRecvTransport()")
+                //reconnectRecvTransport()
             }
             NSLog("[MS] recv transport connection state: " + (stringState ?? "unknown"))
         }

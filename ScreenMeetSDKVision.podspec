@@ -3,7 +3,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScreenMeetSDKVision'
-  s.version          = '2.0.14'
+  s.version          = '2.0.15'
   s.summary          = 'ScreenMeetSDKVision enables ScreenMeet\'s realtime platform in your app.'
 
   s.description      = <<-DESC
